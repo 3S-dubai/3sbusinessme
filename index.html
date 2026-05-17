@@ -2492,6 +2492,133 @@ details[open] > summary{
   }
 }
 
+
+/* FINAL LOGO GOLD SHADE TREATMENT */
+.logo-box{
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255,255,255,.72), rgba(255,255,255,.24) 34%, rgba(201,168,76,.14) 100%) !important;
+  border:1px solid rgba(201,168,76,.36) !important;
+  border-radius:18px !important;
+  padding:8px 13px !important;
+  box-shadow:
+    0 14px 34px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.58),
+    inset 0 -1px 0 rgba(201,168,76,.18) !important;
+  backdrop-filter:blur(8px) !important;
+  -webkit-backdrop-filter:blur(8px) !important;
+}
+
+.logo-box img{
+  filter:drop-shadow(0 3px 8px rgba(0,0,0,.16)) !important;
+}
+
+@media(max-width:620px){
+  .logo-box{
+    border-radius:15px !important;
+    padding:6px 10px !important;
+  }
+}
+
+
+/* Hide floating call button on desktop only */
+@media(min-width: 769px){
+  .call-float{
+    display:none !important;
+  }
+}
+
+@media(max-width: 768px){
+  .call-float{
+    display:flex !important;
+  }
+}
+
+
+
+
+/* TRUE FINAL LOGO SOFT GOLD MIST - subtle, no sharp edges */
+.logo{
+  position:relative !important;
+  isolation:isolate !important;
+}
+
+.logo::before{
+  content:"" !important;
+  position:absolute !important;
+  left:-42px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:330px !important;
+  height:118px !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  border-radius:999px !important;
+  background:
+    radial-gradient(ellipse at 32% 50%, rgba(201,168,76,.26) 0%, rgba(201,168,76,.16) 32%, rgba(201,168,76,.07) 56%, rgba(201,168,76,.025) 72%, transparent 88%) !important;
+  filter:blur(18px) !important;
+  opacity:.86 !important;
+}
+
+.logo::after{
+  content:"" !important;
+  position:absolute !important;
+  left:-20px !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  width:210px !important;
+  height:72px !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  border-radius:999px !important;
+  background:radial-gradient(ellipse at 35% 50%, rgba(255,255,255,.10) 0%, rgba(255,255,255,.04) 42%, transparent 76%) !important;
+  filter:blur(12px) !important;
+  opacity:.72 !important;
+}
+
+.logo-box{
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  padding:0 !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+}
+
+.logo-box img{
+  background:transparent !important;
+  filter:
+    drop-shadow(0 3px 8px rgba(0,0,0,.32))
+    drop-shadow(0 0 8px rgba(255,255,255,.08)) !important;
+}
+
+.site-header{
+  background:
+    radial-gradient(ellipse at 8% 50%, rgba(201,168,76,.055) 0%, rgba(201,168,76,.025) 28%, transparent 52%),
+    linear-gradient(180deg, rgba(3,16,36,.99), rgba(4,20,44,.98)) !important;
+}
+
+.header-inner{
+  background:transparent !important;
+}
+
+@media(max-width:620px){
+  .logo::before{
+    left:-34px !important;
+    width:260px !important;
+    height:96px !important;
+    filter:blur(16px) !important;
+    opacity:.82 !important;
+  }
+
+  .logo::after{
+    left:-16px !important;
+    width:170px !important;
+    height:62px !important;
+    filter:blur(10px) !important;
+  }
+}
+
 </style>
 </head>
 
@@ -2521,7 +2648,6 @@ details[open] > summary{
       <a href="https://3sbusinessme.com/services/">Services</a>
       <a href="https://3sbusinessme.com/packages/">Packages</a>
       <a href="https://3sbusinessme.com/faqs/">FAQs</a>
-      <a href="#testimonials">Testimonials</a>
       <a href="https://3sbusinessme.com/teams/">Teams</a>
       <a href="https://3sbusinessme.com/blogs/">Blogs</a>
       <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
@@ -2536,7 +2662,6 @@ details[open] > summary{
     <a href="https://3sbusinessme.com/services/">Services</a>
     <a href="https://3sbusinessme.com/packages/">Packages</a>
     <a href="https://3sbusinessme.com/faqs/">FAQs</a>
-    <a href="#testimonials">Testimonials</a>
     <a href="https://3sbusinessme.com/teams/">Teams</a>
     <a href="https://3sbusinessme.com/blogs/">Blogs</a>
     <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
