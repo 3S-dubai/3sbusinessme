@@ -2536,7 +2536,8 @@ details[open] > summary{
 
 
 
-/* TRUE FINAL LOGO SOFT GOLD MIST - subtle, no sharp edges */
+
+/* TRUE FINAL LOGO LIGHT BLUE SHADE - clean header blend */
 .logo{
   position:relative !important;
   isolation:isolate !important;
@@ -2545,34 +2546,32 @@ details[open] > summary{
 .logo::before{
   content:"" !important;
   position:absolute !important;
-  left:-42px !important;
+  left:-30px !important;
   top:50% !important;
-  transform:translateY(-50%) !important;
-  width:330px !important;
-  height:118px !important;
+  transform:translateY(-50%) skewX(-10deg) !important;
+  width:250px !important;
+  height:76px !important;
   z-index:-1 !important;
   pointer-events:none !important;
-  border-radius:999px !important;
   background:
-    radial-gradient(ellipse at 32% 50%, rgba(201,168,76,.26) 0%, rgba(201,168,76,.16) 32%, rgba(201,168,76,.07) 56%, rgba(201,168,76,.025) 72%, transparent 88%) !important;
-  filter:blur(18px) !important;
-  opacity:.86 !important;
+    linear-gradient(90deg, rgba(67,128,196,.34) 0%, rgba(67,128,196,.22) 42%, rgba(67,128,196,.08) 78%, transparent 100%) !important;
+  clip-path:polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%) !important;
+  filter:drop-shadow(0 10px 22px rgba(0,0,0,.12)) !important;
+  opacity:.92 !important;
 }
 
 .logo::after{
   content:"" !important;
   position:absolute !important;
-  left:-20px !important;
+  left:-18px !important;
   top:50% !important;
-  transform:translateY(-50%) !important;
-  width:210px !important;
-  height:72px !important;
+  transform:translateY(-50%) skewX(-10deg) !important;
+  width:190px !important;
+  height:52px !important;
   z-index:-1 !important;
   pointer-events:none !important;
-  border-radius:999px !important;
-  background:radial-gradient(ellipse at 35% 50%, rgba(255,255,255,.10) 0%, rgba(255,255,255,.04) 42%, transparent 76%) !important;
-  filter:blur(12px) !important;
-  opacity:.72 !important;
+  background:linear-gradient(90deg, rgba(255,255,255,.08), rgba(255,255,255,.025), transparent) !important;
+  clip-path:polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%) !important;
 }
 
 .logo-box{
@@ -2588,13 +2587,13 @@ details[open] > summary{
 .logo-box img{
   background:transparent !important;
   filter:
-    drop-shadow(0 3px 8px rgba(0,0,0,.32))
-    drop-shadow(0 0 8px rgba(255,255,255,.08)) !important;
+    drop-shadow(0 3px 8px rgba(0,0,0,.30))
+    drop-shadow(0 0 8px rgba(255,255,255,.10)) !important;
 }
 
 .site-header{
   background:
-    radial-gradient(ellipse at 8% 50%, rgba(201,168,76,.055) 0%, rgba(201,168,76,.025) 28%, transparent 52%),
+    linear-gradient(90deg, rgba(67,128,196,.08) 0%, rgba(67,128,196,.035) 22%, transparent 45%),
     linear-gradient(180deg, rgba(3,16,36,.99), rgba(4,20,44,.98)) !important;
 }
 
@@ -2604,18 +2603,129 @@ details[open] > summary{
 
 @media(max-width:620px){
   .logo::before{
-    left:-34px !important;
-    width:260px !important;
-    height:96px !important;
-    filter:blur(16px) !important;
-    opacity:.82 !important;
+    left:-22px !important;
+    width:205px !important;
+    height:64px !important;
+  }
+
+  .logo::after{
+    left:-14px !important;
+    width:154px !important;
+    height:44px !important;
+  }
+}
+
+
+/* TRUE FINAL HEADER + FOOTER LOGO SIZE AND BLUE SHADE */
+.logo-box img{
+  height:66px !important;
+  max-height:66px !important;
+  max-width:250px !important;
+  width:auto !important;
+  object-fit:contain !important;
+}
+
+.logo::before{
+  width:292px !important;
+  height:88px !important;
+  left:-34px !important;
+}
+
+.logo::after{
+  width:222px !important;
+  height:60px !important;
+  left:-20px !important;
+}
+
+.footer-logo{
+  position:relative !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  isolation:isolate !important;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+}
+
+.footer-logo::before{
+  content:"" !important;
+  position:absolute !important;
+  left:-30px !important;
+  top:50% !important;
+  transform:translateY(-50%) skewX(-10deg) !important;
+  width:286px !important;
+  height:86px !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  background:
+    linear-gradient(90deg, rgba(67,128,196,.34) 0%, rgba(67,128,196,.22) 42%, rgba(67,128,196,.08) 78%, transparent 100%) !important;
+  clip-path:polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%) !important;
+  filter:drop-shadow(0 10px 22px rgba(0,0,0,.14)) !important;
+  opacity:.92 !important;
+}
+
+.footer-logo::after{
+  content:"" !important;
+  position:absolute !important;
+  left:-18px !important;
+  top:50% !important;
+  transform:translateY(-50%) skewX(-10deg) !important;
+  width:214px !important;
+  height:58px !important;
+  z-index:-1 !important;
+  pointer-events:none !important;
+  background:linear-gradient(90deg, rgba(255,255,255,.09), rgba(255,255,255,.025), transparent) !important;
+  clip-path:polygon(0 0, 86% 0, 100% 50%, 86% 100%, 0 100%) !important;
+}
+
+.footer-logo img{
+  height:62px !important;
+  max-height:62px !important;
+  max-width:245px !important;
+  width:auto !important;
+  object-fit:contain !important;
+  background:transparent !important;
+  filter:
+    drop-shadow(0 3px 8px rgba(0,0,0,.30))
+    drop-shadow(0 0 8px rgba(255,255,255,.10)) !important;
+}
+
+@media(max-width:620px){
+  .logo-box img{
+    height:54px !important;
+    max-height:54px !important;
+    max-width:205px !important;
+  }
+
+  .logo::before{
+    left:-24px !important;
+    width:232px !important;
+    height:72px !important;
   }
 
   .logo::after{
     left:-16px !important;
-    width:170px !important;
-    height:62px !important;
-    filter:blur(10px) !important;
+    width:174px !important;
+    height:50px !important;
+  }
+
+  .footer-logo img{
+    height:52px !important;
+    max-height:52px !important;
+    max-width:205px !important;
+  }
+
+  .footer-logo::before{
+    left:-24px !important;
+    width:230px !important;
+    height:72px !important;
+  }
+
+  .footer-logo::after{
+    left:-16px !important;
+    width:172px !important;
+    height:50px !important;
   }
 }
 
