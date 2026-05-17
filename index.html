@@ -2733,15 +2733,19 @@ details[open] > summary{
 
 
 
-/* TRUE FINAL PURE GLASS HEADER */
+
+/* TRUE FINAL GLASS HEADER WITH SUBTLE GOLD GLOW */
 .site-header{
-  background:rgba(255,255,255,.035) !important;
-  border-bottom:1px solid rgba(255,255,255,.085) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.035) 0%, rgba(255,255,255,.018) 42%, rgba(201,168,76,.045) 100%) !important;
+  border-bottom:1px solid rgba(201,168,76,.16) !important;
   box-shadow:
-    0 10px 28px rgba(0,0,0,.10),
-    inset 0 1px 0 rgba(255,255,255,.075) !important;
-  backdrop-filter:blur(18px) saturate(118%) !important;
-  -webkit-backdrop-filter:blur(18px) saturate(118%) !important;
+    0 10px 30px rgba(0,0,0,.12),
+    0 0 34px rgba(201,168,76,.075),
+    inset 0 1px 0 rgba(255,255,255,.08),
+    inset 0 -1px 0 rgba(201,168,76,.08) !important;
+  backdrop-filter:blur(18px) saturate(120%) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(120%) !important;
 }
 
 .site-header::before{
@@ -2750,56 +2754,39 @@ details[open] > summary{
   inset:0 !important;
   pointer-events:none !important;
   background:
+    radial-gradient(ellipse at 18% 50%, rgba(201,168,76,.12) 0%, rgba(201,168,76,.045) 36%, transparent 68%),
     linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,0)) !important;
-  opacity:.45 !important;
-}
-
-.header-inner{
-  position:relative !important;
-  z-index:2 !important;
-  background:transparent !important;
-}
-
-.main-nav a{
-  color:rgba(255,255,255,.94) !important;
-  text-shadow:0 3px 12px rgba(0,0,0,.48) !important;
-}
-
-.logo::before,
-.logo::after{
-  opacity:0 !important;
-  background:none !important;
-  filter:none !important;
-}
-
-.logo-box{
-  background:transparent !important;
-  border:0 !important;
-  box-shadow:none !important;
-  padding:0 !important;
+  opacity:.72 !important;
 }
 
 .logo-box img{
   filter:
     drop-shadow(0 5px 12px rgba(0,0,0,.52))
-    drop-shadow(0 0 4px rgba(255,255,255,.05)) !important;
+    drop-shadow(0 0 8px rgba(201,168,76,.10))
+    drop-shadow(0 0 4px rgba(255,255,255,.06)) !important;
+}
+
+.main-nav a{
+  color:rgba(255,255,255,.94) !important;
+  text-shadow:
+    0 3px 12px rgba(0,0,0,.50),
+    0 0 10px rgba(201,168,76,.08) !important;
 }
 
 .mobile-menu{
-  background:rgba(255,255,255,.05) !important;
-  border-top:1px solid rgba(255,255,255,.09) !important;
-  backdrop-filter:blur(18px) saturate(118%) !important;
-  -webkit-backdrop-filter:blur(18px) saturate(118%) !important;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.045), rgba(201,168,76,.045), rgba(4,20,44,.20)) !important;
+  border-top:1px solid rgba(201,168,76,.14) !important;
+  backdrop-filter:blur(18px) saturate(120%) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(120%) !important;
 }
 
 @media(max-width:620px){
   .site-header{
-    background:rgba(255,255,255,.04) !important;
-    backdrop-filter:blur(16px) saturate(116%) !important;
-    -webkit-backdrop-filter:blur(16px) saturate(116%) !important;
+    background:
+      linear-gradient(135deg, rgba(255,255,255,.035), rgba(201,168,76,.04), rgba(4,20,44,.18)) !important;
   }
 }
-
 
 /* TRUE FINAL HERO IMAGE BEHIND GLASS HEADER */
 body{
