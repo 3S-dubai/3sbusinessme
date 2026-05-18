@@ -6522,6 +6522,143 @@ body.packages-page .service-accordion > summary em{
   }
 }
 
+
+
+/* ==========================================================
+   FINAL QA OVERRIDE - ALIGN SERVICES/PACKAGES WITH HOME MASTER
+   Purpose: stop older 4-column footer rules from shrinking map,
+   keep mobile/container spacing same as homepage, preserve warm glass nav.
+   ========================================================== */
+body.services-page .container,
+body.packages-page .container{
+  width:min(1120px,calc(100% - 36px)) !important;
+  margin-inline:auto !important;
+}
+
+body.services-page .footer-grid.footer-grid-reworked,
+body.packages-page .footer-grid.footer-grid-reworked,
+.footer-grid.footer-grid-reworked{
+  display:grid !important;
+  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr) minmax(360px,1.32fr) !important;
+  gap:34px !important;
+  align-items:stretch !important;
+}
+
+body.services-page .footer-grid.footer-grid-reworked > .footer-col,
+body.packages-page .footer-grid.footer-grid-reworked > .footer-col,
+.footer-grid.footer-grid-reworked > .footer-col{
+  min-width:0 !important;
+}
+
+body.services-page .footer-map-only,
+body.packages-page .footer-map-only,
+.footer-map-only{
+  width:100% !important;
+  min-width:0 !important;
+  display:flex !important;
+}
+
+body.services-page .footer-map-only .footer-map-card,
+body.packages-page .footer-map-only .footer-map-card,
+.footer-map-only .footer-map-card{
+  width:100% !important;
+  min-width:0 !important;
+  min-height:320px !important;
+  height:100% !important;
+  margin-top:0 !important;
+  display:block !important;
+}
+
+body.services-page .footer-map-only .footer-map-frame,
+body.packages-page .footer-map-only .footer-map-frame,
+.footer-map-only .footer-map-frame{
+  display:block !important;
+  width:100% !important;
+  min-width:100% !important;
+  min-height:320px !important;
+  height:320px !important;
+  border:0 !important;
+}
+
+body.services-page .footer-map-only .footer-map-content,
+body.packages-page .footer-map-only .footer-map-content,
+.footer-map-only .footer-map-content{
+  width:calc(100% - 28px) !important;
+  left:14px !important;
+  right:14px !important;
+  bottom:14px !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card{
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card .label,
+body.packages-page .packages-overview-section .service-title-card h2,
+body.packages-page .packages-overview-section .service-title-card p{
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+@media(max-width:1100px){
+  body.services-page .footer-grid.footer-grid-reworked,
+  body.packages-page .footer-grid.footer-grid-reworked,
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(320px,1.15fr) !important;
+  }
+}
+
+@media(max-width:960px){
+  body.services-page .footer-grid.footer-grid-reworked,
+  body.packages-page .footer-grid.footer-grid-reworked,
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr 1fr !important;
+    align-items:start !important;
+  }
+
+  body.services-page .footer-map-only,
+  body.packages-page .footer-map-only,
+  .footer-map-only{
+    grid-column:1 / -1 !important;
+  }
+
+  body.services-page .footer-map-only .footer-map-card,
+  body.services-page .footer-map-only .footer-map-frame,
+  body.packages-page .footer-map-only .footer-map-card,
+  body.packages-page .footer-map-only .footer-map-frame,
+  .footer-map-only .footer-map-card,
+  .footer-map-only .footer-map-frame{
+    min-height:300px !important;
+    height:300px !important;
+  }
+}
+
+@media(max-width:620px){
+  body.services-page .footer-grid.footer-grid-reworked,
+  body.packages-page .footer-grid.footer-grid-reworked,
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+  }
+
+  body.services-page .footer-map-only .footer-map-card,
+  body.services-page .footer-map-only .footer-map-frame,
+  body.packages-page .footer-map-only .footer-map-card,
+  body.packages-page .footer-map-only .footer-map-frame,
+  .footer-map-only .footer-map-card,
+  .footer-map-only .footer-map-frame{
+    min-height:270px !important;
+    height:270px !important;
+  }
+}
+
 </style>
 </head>
 <body class="services-page">
@@ -6774,7 +6911,7 @@ body.packages-page .service-accordion > summary em{
       <div class="footer-block footer-services-block">
         <h4>Services</h4>
         <ul>
-          <li><a href="../">All Services</a></li>
+          <li><a href="./">All Services</a></li>
           <li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
           <li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
           <li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
