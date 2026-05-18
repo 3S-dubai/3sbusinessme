@@ -1,0 +1,4 @@
+3S Static Deploy - Critical QA after Blogs page
+Pages: Home, Services, Packages, FAQs, Teams, Blogs
+Fixes applied: Blog schema corrected, Packages title-card left alignment hardened, long title wrapping hardened, CTA frame wrapping hardened, button/link QA completed.
+Errors: NONE

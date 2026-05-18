@@ -1,29 +1,25 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Business Setup in Dubai & UAE | 3S Business Services</title>
-<meta name="description" content="3S Business Services provides business setup support in Dubai and the UAE, including company formation, trade license assistance, visas, PRO services and banking guidance.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<link rel="canonical" href="./">
-
-<meta property="og:title" content="Business Setup in Dubai & UAE | 3S Business Services">
-<meta property="og:description" content="Corporate business setup support for company formation, trade licensing, mainland and free zone setup, visas, PRO services and corporate banking guidance in the UAE.">
-<meta property="og:image" content="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png">
-<meta property="og:url" content="https://3sbusinessme.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="3S Business Services">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Business Setup in Dubai & UAE | 3S Business Services">
-<meta name="twitter:description" content="Company formation and business setup support in Dubai and the UAE.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Business Setup in Dubai &amp; UAE | 3S Business Services</title>
+<meta content="3S Business Services provides business setup support in Dubai and the UAE, including company formation, trade license assistance, visas, PRO services and banking guidance." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<link href="./" rel="canonical"/>
+<meta content="Business Setup in Dubai &amp; UAE | 3S Business Services" property="og:title"/>
+<meta content="Corporate business setup support for company formation, trade licensing, mainland and free zone setup, visas, PRO services and corporate banking guidance in the UAE." property="og:description"/>
+<meta content="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" property="og:image"/>
+<meta content="https://3sbusinessme.com/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="3S Business Services" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Business Setup in Dubai &amp; UAE | 3S Business Services" name="twitter:title"/>
+<meta content="Company formation and business setup support in Dubai and the UAE." name="twitter:description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -45,7 +41,6 @@
   "priceRange":"AED"
 }
 </script>
-
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -102,7 +97,6 @@
   ]
 }
 </script>
-
 <style>
 /* Hero image is embedded inline as compressed WebP Base64. No separate upload needed. */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -5002,402 +4996,546 @@ section#faq .dropdown-list summary{
   }
 }
 
+
+
+/* ================================
+   TOTAL QA HARDENING - alignment, wrapping, buttons
+   Applied after Blogs page QA. Does not target hero-card content.
+   ================================ */
+html, body{
+  max-width:100% !important;
+  overflow-x:hidden !important;
+}
+
+main, section, .container, .section-head, .service-title-card, .team-title-card, .blog-title-card,
+.cta-card, .package-card, .blog-card, .team-card, .footer-grid-reworked, .footer-map-only{
+  min-width:0 !important;
+}
+
+.btn,
+a.btn,
+.main-nav a,
+.mobile-menu a,
+.footer a,
+.blog-card a,
+.package-card a,
+.team-card a,
+.call-float,
+.whatsapp-float{
+  pointer-events:auto !important;
+  cursor:pointer !important;
+}
+
+.section-head h2,
+.service-title-card h2,
+.team-title-card h2,
+.blog-title-card h2,
+.cta-card h2,
+.package-card h3,
+.blog-card h3,
+.team-card h3,
+.section-dropdown > summary strong,
+.service-accordion > summary strong{
+  max-width:100% !important;
+  min-width:0 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+  hyphens:auto !important;
+}
+
+.section-head p,
+.service-title-card p,
+.team-title-card p,
+.blog-title-card p,
+.cta-card p,
+.package-card p,
+.blog-card p,
+.team-card p,
+.section-dropdown > summary em,
+.service-accordion > summary em{
+  max-width:100% !important;
+  min-width:0 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+}
+
+/* Packages title-frame alignment requested: title follows subtitle direction, not center drift */
+body.packages-page .packages-overview-section .service-title-card,
+body.packages-page .packages-overview-section .service-title-card .label,
+body.packages-page .packages-overview-section .service-title-card h2,
+body.packages-page .packages-overview-section .service-title-card p{
+  text-align:left !important;
+}
+body.packages-page .packages-overview-section .service-title-card{
+  margin-left:0 !important;
+  margin-right:auto !important;
+  justify-items:start !important;
+  align-items:start !important;
+}
+
+/* Safe section dropdown/title frames so long text never gets cropped on mobile */
+body.packages-page .section-dropdown > summary,
+body.packages-page .service-accordion > summary{
+  overflow:visible !important;
+  align-items:flex-start !important;
+}
+body.packages-page .section-dropdown > summary span,
+body.packages-page .service-accordion > summary span{
+  min-width:0 !important;
+  width:100% !important;
+  text-align:left !important;
+}
+body.packages-page .section-dropdown > summary strong,
+body.packages-page .section-dropdown > summary em,
+body.packages-page .service-accordion > summary strong,
+body.packages-page .service-accordion > summary em{
+  text-align:left !important;
+}
+
+/* Final CTA cards: same robust frame behavior across Packages, Teams, Blogs and FAQ */
+.service-final-cta .cta-card,
+.team-support-section .cta-card,
+.blog-support-section .cta-card,
+#faq-support .cta-card{
+  overflow:hidden !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+}
+.service-final-cta .cta-card > div,
+.team-support-section .cta-card > div,
+.blog-support-section .cta-card > div,
+#faq-support .cta-card > div{
+  min-width:0 !important;
+}
+
+/* Blog page QA: consistent card rhythm and safe wrapping */
+body.blogs-page .blog-card-grid{
+  align-items:stretch !important;
+}
+body.blogs-page .blog-card{
+  min-width:0 !important;
+  height:100% !important;
+}
+body.blogs-page .blog-card a{
+  margin-top:auto !important;
+}
+body.blogs-page .blog-title-card h2{
+  font-size:clamp(28px,3.4vw,42px) !important;
+}
+
+@media(max-width:960px){
+  .service-final-cta .cta-card,
+  .team-support-section .cta-card,
+  .blog-support-section .cta-card,
+  #faq-support .cta-card{
+    grid-template-columns:1fr !important;
+  }
+}
+
+@media(max-width:620px){
+  .section-head,
+  .service-title-card,
+  .team-title-card,
+  .blog-title-card{
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .section-head h2,
+  .service-title-card h2,
+  .team-title-card h2,
+  .blog-title-card h2,
+  .cta-card h2{
+    font-size:clamp(24px,7vw,32px) !important;
+    line-height:1.13 !important;
+    letter-spacing:-.035em !important;
+  }
+
+  body.packages-page .section-dropdown > summary,
+  body.packages-page .service-accordion > summary{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 32px !important;
+    gap:14px !important;
+    align-items:flex-start !important;
+  }
+
+  body.packages-page .section-dropdown > summary::after,
+  body.packages-page .service-accordion > summary::after{
+    justify-self:end !important;
+  }
+
+  .service-final-cta .cta-card,
+  .team-support-section .cta-card,
+  .blog-support-section .cta-card,
+  #faq-support .cta-card{
+    text-align:left !important;
+    padding:26px !important;
+    border-radius:24px !important;
+  }
+
+  .service-final-cta .cta-card .btn,
+  .team-support-section .cta-card .btn,
+  .blog-support-section .cta-card .btn,
+  #faq-support .cta-card .btn{
+    width:100% !important;
+  }
+
+  body.blogs-page .blog-title-card{
+    text-align:center !important;
+  }
+
+  body.blogs-page .blog-card h3{
+    font-size:18px !important;
+    line-height:1.22 !important;
+  }
+}
+
 </style>
 </head>
-
 <body>
-<div class="floating-actions" aria-label="Quick contact actions">
-  <a class="call-float" href="tel:+97143955747" aria-label="Call 3S Business Services">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"/></svg>
-  </a>
-
-  <a class="whatsapp-float" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20a%20free%20business%20setup%20consultation." target="_blank" rel="noopener" aria-label="Chat with 3S on WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.471 2.027 7.773L0 32l8.476-2.001A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.27 22.388c-.344.969-2.01 1.856-2.77 1.976-.71.112-1.607.16-2.59-.163a23.7 23.7 0 0 1-2.348-.869c-4.13-1.785-6.832-5.98-7.036-6.254-.204-.274-1.668-2.217-1.668-4.228s1.054-3.003 1.428-3.414c.374-.411.816-.514 1.088-.514.272 0 .544.003.782.014.25.012.587-.095.918.7.344.831 1.168 2.842 1.27 3.047.102.204.17.443.034.716-.136.272-.204.443-.408.68-.204.238-.43.532-.613.714-.204.204-.416.425-.179.834.238.408 1.056 1.742 2.267 2.822 1.558 1.389 2.872 1.818 3.28 2.022.408.204.646.17.884-.102.238-.272 1.02-1.19 1.293-1.598.272-.408.544-.34.918-.204.374.136 2.38 1.122 2.788 1.326.408.204.68.306.782.476.102.17.102.986-.242 1.956z"/></svg>
-  </a>
+<div aria-label="Quick contact actions" class="floating-actions">
+<a aria-label="Call 3S Business Services" class="call-float" href="tel:+97143955747">
+<svg aria-hidden="true" viewbox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"></path></svg>
+</a>
+<a aria-label="Chat with 3S on WhatsApp" class="whatsapp-float" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20a%20free%20business%20setup%20consultation." rel="noopener" target="_blank">
+<svg aria-hidden="true" viewbox="0 0 32 32"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.822.736 5.471 2.027 7.773L0 32l8.476-2.001A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.27 22.388c-.344.969-2.01 1.856-2.77 1.976-.71.112-1.607.16-2.59-.163a23.7 23.7 0 0 1-2.348-.869c-4.13-1.785-6.832-5.98-7.036-6.254-.204-.274-1.668-2.217-1.668-4.228s1.054-3.003 1.428-3.414c.374-.411.816-.514 1.088-.514.272 0 .544.003.782.014.25.012.587-.095.918.7.344.831 1.168 2.842 1.27 3.047.102.204.17.443.034.716-.136.272-.204.443-.408.68-.204.238-.43.532-.613.714-.204.204-.416.425-.179.834.238.408 1.056 1.742 2.267 2.822 1.558 1.389 2.872 1.818 3.28 2.022.408.204.646.17.884-.102.238-.272 1.02-1.19 1.293-1.598.272-.408.544-.34.918-.204.374.136 2.38 1.122 2.788 1.326.408.204.68.306.782.476.102.17.102.986-.242 1.956z"></path></svg>
+</a>
 </div>
-
 <a class="skip-link" href="#main">Skip to content</a>
-
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="./" aria-label="3S Business Services Home">
-      <span class="logo-box">
-        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
-      </span>
-    </a>
-
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="./">Home</a>
-      <a href="services/">Services</a>
-      <a href="packages/">Packages</a>
-      <a href="faqs/">FAQs</a>
-      <a href="teams/">Teams</a>
-      <a href="https://3sbusinessme.com/blogs/">Blogs</a>
-      <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-    </nav>
-    <label class="css-menu-button" for="mobileToggle" aria-label="Open menu">☰</label>
-  </div>
-
-  <input class="mobile-toggle-checkbox" type="checkbox" id="mobileToggle">
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="./">Home</a>
-    <a href="services/">Services</a>
-    <a href="packages/">Packages</a>
-    <a href="faqs/">FAQs</a>
-    <a href="teams/">Teams</a>
-    <a href="https://3sbusinessme.com/blogs/">Blogs</a>
-    <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-  </div>
+<div class="container header-inner">
+<a aria-label="3S Business Services Home" class="logo" href="./">
+<span class="logo-box">
+<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
+</span>
+</a>
+<nav aria-label="Main navigation" class="main-nav">
+<a href="./">Home</a>
+<a href="services/">Services</a>
+<a href="packages/">Packages</a>
+<a href="faqs/">FAQs</a>
+<a href="teams/">Teams</a>
+<a href="blogs/">Blogs</a>
+<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+</nav>
+<label aria-label="Open menu" class="css-menu-button" for="mobileToggle">☰</label>
+</div>
+<input class="mobile-toggle-checkbox" id="mobileToggle" type="checkbox"/>
+<div class="mobile-menu" id="mobileMenu">
+<a href="./">Home</a>
+<a href="services/">Services</a>
+<a href="packages/">Packages</a>
+<a href="faqs/">FAQs</a>
+<a href="teams/">Teams</a>
+<a href="blogs/">Blogs</a>
+<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+</div>
 </header>
-
 <main id="main">
-  <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <div class="badge">3S Business Services</div>
-        <h1>Business Setup in <span>Dubai</span> and Across the <span>UAE</span></h1>
-        <p class="hero-lead">Corporate support for UAE company formation, trade license assistance, mainland and free zone setup, visa processing, PRO services and corporate banking guidance.</p>
-
-        <div class="hero-actions">
-          <a class="btn btn-gold" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20a%20free%20business%20setup%20consultation." target="_blank" rel="noopener">Free Consultation</a>
-          <a class="btn btn-outline" href="https://3sbusinessme.com/cost-calculator/">Cost Calculator</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="logo-strip" aria-label="UAE jurisdiction experience">
-    <div class="container">
-      <div class="section-head center jurisdiction-title">
-        <div class="label">Jurisdictions</div>
-        <h2>Authorized Associates of the UAE’s Leading Jurisdictions</h2>
-        <p>3S works with leading UAE jurisdiction options to support mainland and free zone business setup requirements.</p>
-      </div>
-      <div class="jurisdiction-flow" aria-label="UAE jurisdiction logos">
-        <div class="jurisdiction-track">
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/qqlioD3aHC6Wdulj67Diyjbcqo-1.png" alt="Meydan"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/WScRTtYtS2UZM8O0WBvmkCfAHc.png" alt="IFZA"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/JxAPjI69HHqQKnSI8Pti5eOyDlE.png" alt="Shams"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/fMBo6Yi2oZYzZ8HID1VommBcL8.png" alt="Dubai Mainland"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/XLLrlSphcXurtsZrv2YtjhWgbCc.png" alt="RAKEZ"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/TALOoYP1rTAMYm4gCgiwXbU1Xo.png" alt="SPC Free Zone"></div>
-
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/qqlioD3aHC6Wdulj67Diyjbcqo-1.png" alt="Meydan"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/WScRTtYtS2UZM8O0WBvmkCfAHc.png" alt="IFZA"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/JxAPjI69HHqQKnSI8Pti5eOyDlE.png" alt="Shams"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/fMBo6Yi2oZYzZ8HID1VommBcL8.png" alt="Dubai Mainland"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/XLLrlSphcXurtsZrv2YtjhWgbCc.png" alt="RAKEZ"></div>
-          <div class="logo-cell"><img src="https://3sbusinessme.com/wp-content/uploads/2025/10/TALOoYP1rTAMYm4gCgiwXbU1Xo.png" alt="SPC Free Zone"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<section class="hero">
+<div class="container hero-inner">
+<div>
+<div class="badge">3S Business Services</div>
+<h1>Business Setup in <span>Dubai</span> and Across the <span>UAE</span></h1>
+<p class="hero-lead">Corporate support for UAE company formation, trade license assistance, mainland and free zone setup, visa processing, PRO services and corporate banking guidance.</p>
+<div class="hero-actions">
+<a class="btn btn-gold" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20a%20free%20business%20setup%20consultation." rel="noopener" target="_blank">Free Consultation</a>
+<a class="btn btn-outline" href="https://3sbusinessme.com/cost-calculator/">Cost Calculator</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-label="UAE jurisdiction experience" class="logo-strip">
+<div class="container">
+<div class="section-head center jurisdiction-title">
+<div class="label">Jurisdictions</div>
+<h2>Authorized Associates of the UAE’s Leading Jurisdictions</h2>
+<p>3S works with leading UAE jurisdiction options to support mainland and free zone business setup requirements.</p>
+</div>
+<div aria-label="UAE jurisdiction logos" class="jurisdiction-flow">
+<div class="jurisdiction-track">
+<div class="logo-cell"><img alt="Meydan" src="https://3sbusinessme.com/wp-content/uploads/2025/10/qqlioD3aHC6Wdulj67Diyjbcqo-1.png"/></div>
+<div class="logo-cell"><img alt="IFZA" src="https://3sbusinessme.com/wp-content/uploads/2025/10/WScRTtYtS2UZM8O0WBvmkCfAHc.png"/></div>
+<div class="logo-cell"><img alt="Shams" src="https://3sbusinessme.com/wp-content/uploads/2025/10/JxAPjI69HHqQKnSI8Pti5eOyDlE.png"/></div>
+<div class="logo-cell"><img alt="Dubai Mainland" src="https://3sbusinessme.com/wp-content/uploads/2025/10/fMBo6Yi2oZYzZ8HID1VommBcL8.png"/></div>
+<div class="logo-cell"><img alt="RAKEZ" src="https://3sbusinessme.com/wp-content/uploads/2025/10/XLLrlSphcXurtsZrv2YtjhWgbCc.png"/></div>
+<div class="logo-cell"><img alt="SPC Free Zone" src="https://3sbusinessme.com/wp-content/uploads/2025/10/TALOoYP1rTAMYm4gCgiwXbU1Xo.png"/></div>
+<div class="logo-cell"><img alt="Meydan" src="https://3sbusinessme.com/wp-content/uploads/2025/10/qqlioD3aHC6Wdulj67Diyjbcqo-1.png"/></div>
+<div class="logo-cell"><img alt="IFZA" src="https://3sbusinessme.com/wp-content/uploads/2025/10/WScRTtYtS2UZM8O0WBvmkCfAHc.png"/></div>
+<div class="logo-cell"><img alt="Shams" src="https://3sbusinessme.com/wp-content/uploads/2025/10/JxAPjI69HHqQKnSI8Pti5eOyDlE.png"/></div>
+<div class="logo-cell"><img alt="Dubai Mainland" src="https://3sbusinessme.com/wp-content/uploads/2025/10/fMBo6Yi2oZYzZ8HID1VommBcL8.png"/></div>
+<div class="logo-cell"><img alt="RAKEZ" src="https://3sbusinessme.com/wp-content/uploads/2025/10/XLLrlSphcXurtsZrv2YtjhWgbCc.png"/></div>
+<div class="logo-cell"><img alt="SPC Free Zone" src="https://3sbusinessme.com/wp-content/uploads/2025/10/TALOoYP1rTAMYm4gCgiwXbU1Xo.png"/></div>
+</div>
+</div>
+</div>
+</section>
 <section class="section section-white" id="services">
-    <div class="container">
-      <details class="section-dropdown">
-        <summary>
-          <span>
-            <small>Services</small>
-            <strong>Professional services for UAE company formation.</strong>
-            <em>Explore advisory, licensing, visa, banking, compliance and corporate support solutions.</em>
-          </span>
-        </summary>
-
-        <div class="dropdown-list nested-dropdown-list">
-          <details>
-          <summary>Business Setup Advisory</summary>
-          <div class="detail-body">
+<div class="container">
+<details class="section-dropdown">
+<summary>
+<span>
+<small>Services</small>
+<strong>Professional services for UAE company formation.</strong>
+<em>Explore advisory, licensing, visa, banking, compliance and corporate support solutions.</em>
+</span>
+</summary>
+<div class="dropdown-list nested-dropdown-list">
+<details>
+<summary>Business Setup Advisory</summary>
+<div class="detail-body">
             Advisory support to identify the suitable UAE setup route based on business activity, ownership requirements, target market, visa needs and budget.
           </div>
-        </details>
-
-        <details>
-          <summary>Trade License Assistance</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>Trade License Assistance</summary>
+<div class="detail-body">
             Assistance with business activity selection, trade license requirements, documentation guidance and process coordination.
           </div>
-        </details>
-
-        <details>
-          <summary>Visa and Emirates ID Support</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>Visa and Emirates ID Support</summary>
+<div class="detail-body">
             Support for investor, employee and dependent visa processes, including Emirates ID-related steps after company formation.
           </div>
-        </details>
-
-        <details>
-          <summary>Corporate Bank Account Guidance</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>Corporate Bank Account Guidance</summary>
+<div class="detail-body">
             Guidance on corporate bank account preparation, required documentation and suitable banking options based on your business profile.
           </div>
-        </details>
-
-        <details>
-          <summary>PRO and Government Liaison Support</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>PRO and Government Liaison Support</summary>
+<div class="detail-body">
             Coordination support for renewals, approvals, document processing and ongoing corporate administration requirements.
           </div>
-        </details>
-
-        <details>
-          <summary>VAT, Corporate Tax and Compliance</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>VAT, Corporate Tax and Compliance</summary>
+<div class="detail-body">
             Support for VAT registration, corporate tax registration and ongoing compliance requirements for UAE companies.
           </div>
-        </details>
-
-
-          <details>
-            <summary>Trademark Registration</summary>
-            <div class="detail-body">
+</details>
+<details>
+<summary>Trademark Registration</summary>
+<div class="detail-body">
               Support for UAE trademark registration to help protect brand names, logos and commercial identity.
             </div>
-          </details>
-
-          <details>
-            <summary>Co-Working and Office Space Support</summary>
-            <div class="detail-body">
+</details>
+<details>
+<summary>Co-Working and Office Space Support</summary>
+<div class="detail-body">
               Guidance on co-working, flexi-desk and office space options connected to business setup and licensing requirements.
             </div>
-          </details>
-
-          <details>
-            <summary>Legal Translation</summary>
-            <div class="detail-body">
+</details>
+<details>
+<summary>Legal Translation</summary>
+<div class="detail-body">
               Certified legal and commercial document translation support for official business and government-related use.
             </div>
-          </details>
-
-          <details>
-            <summary>Document Attestation</summary>
-            <div class="detail-body">
+</details>
+<details>
+<summary>Document Attestation</summary>
+<div class="detail-body">
               Assistance with document attestation requirements for UAE and international business use.
             </div>
-          </details>
-
-        </div>
-      </details>
-    </div>
-  </section>
+</details>
+</div>
+</details>
+</div>
+</section>
 <section class="section section-white" id="process">
-    <div class="container">
-      <details class="section-dropdown">
-        <summary>
-          <span>
-            <small>How It Works</small>
-            <strong>A clear company setup process.</strong>
-            <em>Review the main stages from planning to licensing and post-setup support.</em>
-          </span>
-        </summary>
-
-        <div class="dropdown-list nested-dropdown-list">
-          <details>
-          <summary>1. Share Your Business Activity</summary>
-          <div class="detail-body">
+<div class="container">
+<details class="section-dropdown">
+<summary>
+<span>
+<small>How It Works</small>
+<strong>A clear company setup process.</strong>
+<em>Review the main stages from planning to licensing and post-setup support.</em>
+</span>
+</summary>
+<div class="dropdown-list nested-dropdown-list">
+<details>
+<summary>1. Share Your Business Activity</summary>
+<div class="detail-body">
             Share your proposed business activity, ownership structure and preferred operating market.
           </div>
-        </details>
-
-        <details>
-          <summary>2. Compare Setup Routes</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>2. Compare Setup Routes</summary>
+<div class="detail-body">
             3S helps you compare mainland, free zone and offshore options based on cost, licensing requirements and operational goals.
           </div>
-        </details>
-
-        <details>
-          <summary>3. Start the Setup Process</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>3. Start the Setup Process</summary>
+<div class="detail-body">
             Proceed with documentation, license coordination, visa support and post-setup requirements with professional guidance.
           </div>
-        </details>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <section class="section section-light" id="faq">
-    <div class="container">
-      <details class="section-dropdown">
-        <summary>
-          <span>
-            <small>FAQs</small>
-            <strong>Frequently asked questions.</strong>
-            <em>Clear answers on setup routes, documentation, ownership and banking requirements.</em>
-          </span>
-        </summary>
-
-        <div class="dropdown-list nested-dropdown-list">
-          <details>
-          <summary>Which UAE company setup option is right for my business?</summary>
-          <div class="detail-body">
+</details>
+</div>
+</details>
+</div>
+</section>
+<section class="section section-light" id="faq">
+<div class="container">
+<details class="section-dropdown">
+<summary>
+<span>
+<small>FAQs</small>
+<strong>Frequently asked questions.</strong>
+<em>Clear answers on setup routes, documentation, ownership and banking requirements.</em>
+</span>
+</summary>
+<div class="dropdown-list nested-dropdown-list">
+<details>
+<summary>Which UAE company setup option is right for my business?</summary>
+<div class="detail-body">
             The right option depends on business activity, target market, ownership requirements, visa needs, office requirements and budget. 3S can guide you between mainland, free zone and offshore structures.
           </div>
-        </details>
-
-        <details>
-          <summary>What does a business setup consultant do?</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>What does a business setup consultant do?</summary>
+<div class="detail-body">
             A business setup consultant helps you understand suitable jurisdictions, license requirements, estimated costs, documentation and the process involved in starting a company in Dubai or the wider UAE.
           </div>
-        </details>
-
-        <details>
-          <summary>What is the difference between free zone and mainland company setup?</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>What is the difference between free zone and mainland company setup?</summary>
+<div class="detail-body">
             Free zone setup is often suitable for ownership flexibility, remote operations and structured packages. Mainland company setup is suited for businesses that need wider UAE market access and local commercial flexibility.
           </div>
-        </details>
-
-        <details>
-          <summary>Can foreigners start a business in Dubai?</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>Can foreigners start a business in Dubai?</summary>
+<div class="detail-body">
             Yes. Foreign investors can start a business in Dubai, with 100% ownership available for many free zone and mainland activities. The suitable route depends on the chosen business activity and setup structure.
           </div>
-        </details>
-
-        <details>
-          <summary>Can I open a UAE corporate bank account after company setup?</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>Can I open a UAE corporate bank account after company setup?</summary>
+<div class="detail-body">
             Yes. After company setup, 3S can guide you on bank account preparation, required documents and suitable banking options based on your business type and profile.
           </div>
-        </details>
-
-        <details>
-          <summary>What documents may be required for UAE business setup?</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>What documents may be required for UAE business setup?</summary>
+<div class="detail-body">
             Common requirements include passport copies, visa or entry stamp copies where applicable, Emirates ID for UAE residents, business activity details, proposed company names and shareholder information. Exact requirements vary by jurisdiction and activity.
           </div>
-        </details>
-
-        <details>
-          <summary>What happens after the company is set up?</summary>
-          <div class="detail-body">
+</details>
+<details>
+<summary>What happens after the company is set up?</summary>
+<div class="detail-body">
             Post-setup requirements may include visa support, Emirates ID, corporate banking guidance, VAT or corporate tax registration, renewals and ongoing PRO services depending on the business structure.
           </div>
-        </details>
-        </div>
-      </details>
-    </div>
-  </section>
-
-  <section class="section section-white" id="testimonials">
-    <div class="container">
-      <details class="section-dropdown" open>
-        <summary>
-          <span>
-            <small>Testimonials</small>
-            <strong>Client feedback.</strong>
-            <em>Selected experiences from businesses supported by 3S.</em>
-          </span>
-        </summary>
-
-        <div class="testimonial-flow" aria-label="Client testimonials">
-  <div class="testimonial-track">
-    <article class="testimonial-flow-card">
-      <div class="testimonial-tag">Wellness</div>
-      <h3>Atmanan Wellness Centre</h3>
-      <p>The formation of Atmanan was handled smoothly with the support of 3S. The team was responsive, professional and efficient throughout the process.</p>
-      <strong>Ms. Anita Raina, CEO</strong>
-    </article>
-
-    <article class="testimonial-flow-card">
-      <div class="testimonial-tag">Medical</div>
-      <h3>Good Living Medical Center</h3>
-      <p>3S supported the company incorporation and continued to be a reliable partner in the business journey over the years.</p>
-      <strong>Dr. Riyaz Badami, Medical Director</strong>
-    </article>
-
-    <article class="testimonial-flow-card">
-      <div class="testimonial-tag">Trading</div>
-      <h3>24 Seven Mini Mart LLC</h3>
-      <p>The company has worked with 3S for multiple years and had a positive experience with their support for commercial and business requirements.</p>
-      <strong>Mr. Rajiv Taimini, Managing Director</strong>
-    </article>
-  </div>
+</details>
 </div>
-      </details>
-    </div>
-  </section>
+</details>
+</div>
+</section>
+<section class="section section-white" id="testimonials">
+<div class="container">
+<details class="section-dropdown" open="">
+<summary>
+<span>
+<small>Testimonials</small>
+<strong>Client feedback.</strong>
+<em>Selected experiences from businesses supported by 3S.</em>
+</span>
+</summary>
+<div aria-label="Client testimonials" class="testimonial-flow">
+<div class="testimonial-track">
+<article class="testimonial-flow-card">
+<div class="testimonial-tag">Wellness</div>
+<h3>Atmanan Wellness Centre</h3>
+<p>The formation of Atmanan was handled smoothly with the support of 3S. The team was responsive, professional and efficient throughout the process.</p>
+<strong>Ms. Anita Raina, CEO</strong>
+</article>
+<article class="testimonial-flow-card">
+<div class="testimonial-tag">Medical</div>
+<h3>Good Living Medical Center</h3>
+<p>3S supported the company incorporation and continued to be a reliable partner in the business journey over the years.</p>
+<strong>Dr. Riyaz Badami, Medical Director</strong>
+</article>
+<article class="testimonial-flow-card">
+<div class="testimonial-tag">Trading</div>
+<h3>24 Seven Mini Mart LLC</h3>
+<p>The company has worked with 3S for multiple years and had a positive experience with their support for commercial and business requirements.</p>
+<strong>Mr. Rajiv Taimini, Managing Director</strong>
+</article>
+</div>
+</div>
+</details>
+</div>
+</section>
 <section class="section section-white">
-    <div class="container">
-      <div class="cta">
-        <div>
-          <div class="label">Start Here</div>
-          <h2>Discuss your UAE company formation requirements.</h2>
-          <p>Share your business activity and requirements to receive guidance on the suitable UAE company formation route.</p>
-        </div>
-        <a class="btn btn-gold" href="https://3sbusinessme.com/contact-us/">Contact 3S</a>
-      </div>
-    </div>
-  </section>
+<div class="container">
+<div class="cta">
+<div>
+<div class="label">Start Here</div>
+<h2>Discuss your UAE company formation requirements.</h2>
+<p>Share your business activity and requirements to receive guidance on the suitable UAE company formation route.</p>
+</div>
+<a class="btn btn-gold" href="https://3sbusinessme.com/contact-us/">Contact 3S</a>
+</div>
+</div>
+</section>
 </main>
-
 <footer class="footer">
-  <div class="container footer-grid footer-grid-reworked">
-    <div class="footer-col footer-brand-services">
-      <a class="footer-logo" href="./" aria-label="3S Business Services Home">
-        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
-      </a>
-      <p>Business setup and corporate support services in Dubai and across the UAE.</p>
-
-      <div class="footer-block footer-services-block">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="services/">All Services</a></li>
-          <li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
-          <li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
-          <li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-col footer-company-contact">
-      <div class="footer-block">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="packages/">Packages</a></li>
-          <li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
-          <li><a href="faqs/">FAQs</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-block footer-contact-block">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+97143955747">+971 4 395 5747</a></li>
-          <li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
-          <li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-col footer-map-only">
-      <div class="footer-map-card" aria-label="Office location map preview">
-        <iframe
-          class="footer-map-frame"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
-        </iframe>
-        <div class="footer-map-content">
-          <strong>Office Location</strong>
-          <span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
-          <a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" target="_blank" rel="noopener">Open Google Map</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <p>© 2026 3S Business Services. All rights reserved.</p>
-    <p>3S Business Services is a private business consultancy based in Dubai.</p>
-  </div>
+<div class="container footer-grid footer-grid-reworked">
+<div class="footer-col footer-brand-services">
+<a aria-label="3S Business Services Home" class="footer-logo" href="./">
+<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
+</a>
+<p>Business setup and corporate support services in Dubai and across the UAE.</p>
+<div class="footer-block footer-services-block">
+<h4>Services</h4>
+<ul>
+<li><a href="services/">All Services</a></li>
+<li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
+<li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
+<li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col footer-company-contact">
+<div class="footer-block">
+<h4>Company</h4>
+<ul>
+<li><a href="packages/">Packages</a></li>
+<li><a href="blogs/">Blogs</a></li>
+<li><a href="faqs/">FAQs</a></li>
+</ul>
+</div>
+<div class="footer-block footer-contact-block">
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:+97143955747">+971 4 395 5747</a></li>
+<li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
+<li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
+</ul>
+</div>
+</div>
+<div class="footer-col footer-map-only">
+<div aria-label="Office location map preview" class="footer-map-card">
+<iframe allowfullscreen="" class="footer-map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
+</iframe>
+<div class="footer-map-content">
+<strong>Office Location</strong>
+<span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
+<a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" rel="noopener" target="_blank">Open Google Map</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 3S Business Services. All rights reserved.</p>
+<p>3S Business Services is a private business consultancy based in Dubai.</p>
+</div>
 </footer>
-
 <script>
 document.querySelectorAll(".mobile-menu a").forEach(link => {
   link.addEventListener("click", () => {
@@ -5433,6 +5571,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-
 </body>
 </html>
