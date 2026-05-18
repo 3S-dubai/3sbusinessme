@@ -7552,6 +7552,388 @@ body.contact-page .contact-mini-actions{
   body.contact-page .contact-mini-actions .btn,body.contact-page .contact-form .btn{width:100% !important;}
 }
 
+
+
+/* =========================================================
+   FINAL TITLE TILE ALIGNMENT QA FIX
+   Rule: tile stays centered; gold mini label is centered;
+   main title + subtitle/comment are left aligned inside tile.
+   ========================================================= */
+.section-dropdown,
+.section-light .section-dropdown,
+.service-page-band .section-dropdown,
+#faq .section-dropdown,
+section#faq .section-dropdown{
+  width:100% !important;
+  max-width:920px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+.section-dropdown > summary,
+.section-light .section-dropdown > summary,
+.service-page-band .section-dropdown > summary,
+#faq .section-dropdown > summary,
+section#faq .section-dropdown > summary{
+  text-align:left !important;
+  justify-content:space-between !important;
+  align-items:center !important;
+}
+
+.section-dropdown > summary > span,
+.section-light .section-dropdown > summary > span,
+.service-page-band .section-dropdown > summary > span,
+#faq .section-dropdown > summary > span,
+section#faq .section-dropdown > summary > span{
+  display:grid !important;
+  width:100% !important;
+  max-width:760px !important;
+  gap:8px !important;
+  justify-items:stretch !important;
+  text-align:left !important;
+}
+
+.section-dropdown > summary small,
+.section-light .section-dropdown > summary small,
+.service-page-band .section-dropdown > summary small,
+#faq .section-dropdown > summary small,
+section#faq .section-dropdown > summary small{
+  justify-self:center !important;
+  width:max-content !important;
+  max-width:100% !important;
+  text-align:center !important;
+  color:#b8872e !important;
+  background:rgba(201,168,76,.15) !important;
+  border:1px solid rgba(201,168,76,.25) !important;
+  border-radius:999px !important;
+  padding:6px 12px !important;
+  font-weight:900 !important;
+  letter-spacing:.14em !important;
+  line-height:1 !important;
+}
+
+.section-dropdown > summary strong,
+.section-light .section-dropdown > summary strong,
+.service-page-band .section-dropdown > summary strong,
+#faq .section-dropdown > summary strong,
+section#faq .section-dropdown > summary strong{
+  display:block !important;
+  width:100% !important;
+  text-align:left !important;
+  color:#384152 !important;
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+.section-dropdown > summary em,
+.section-light .section-dropdown > summary em,
+.service-page-band .section-dropdown > summary em,
+#faq .section-dropdown > summary em,
+section#faq .section-dropdown > summary em{
+  display:block !important;
+  width:100% !important;
+  max-width:720px !important;
+  text-align:left !important;
+  color:#667085 !important;
+  overflow-wrap:anywhere !important;
+  word-break:normal !important;
+}
+
+/* Final CTA/title cards: same readable rhythm without disturbing hero cards */
+.cta-card,
+.cta{
+  text-align:left !important;
+}
+
+.cta-card .label,
+.cta .label{
+  width:max-content !important;
+  max-width:100% !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+  color:#b8872e !important;
+  background:rgba(201,168,76,.15) !important;
+  border:1px solid rgba(201,168,76,.25) !important;
+  border-radius:999px !important;
+  padding:6px 12px !important;
+}
+
+.cta-card h2,
+.cta h2,
+.cta-card p,
+.cta p{
+  text-align:left !important;
+}
+
+/* Do not touch hero cards */
+.hero-card small,
+.hero-card h2,
+.hero-card p,
+.hero-visual-content small,
+.hero-visual-content h2,
+.hero-visual-content p{
+  text-align:inherit !important;
+}
+
+@media(max-width:620px){
+  .section-dropdown,
+  .section-light .section-dropdown,
+  .service-page-band .section-dropdown,
+  #faq .section-dropdown,
+  section#faq .section-dropdown{
+    max-width:100% !important;
+  }
+
+  .section-dropdown > summary,
+  .section-light .section-dropdown > summary,
+  .service-page-band .section-dropdown > summary,
+  #faq .section-dropdown > summary,
+  section#faq .section-dropdown > summary{
+    padding-left:18px !important;
+    padding-right:18px !important;
+  }
+
+  .section-dropdown > summary small,
+  .section-light .section-dropdown > summary small,
+  .service-page-band .section-dropdown > summary small,
+  #faq .section-dropdown > summary small,
+  section#faq .section-dropdown > summary small,
+  .cta-card .label,
+  .cta .label{
+    font-size:10px !important;
+    letter-spacing:.11em !important;
+    padding:6px 10px !important;
+  }
+}
+
+
+
+/* =========================================================
+   FINAL EXCEPTION PASS - title tile text rhythm + contact hero fit
+   Rule: title tile itself stays centered. Gold mini label stays centered.
+   Default title/comment stay left, except short first title tiles listed below.
+   ========================================================= */
+.section-head,
+.section-head.center,
+.service-title-card,
+.team-title-card,
+.blog-title-card,
+.contact-title-card,
+.logo-strip .jurisdiction-title{
+  width:min(760px,100%) !important;
+  max-width:760px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:left !important;
+}
+
+.section-head .label,
+.service-title-card .label,
+.team-title-card .label,
+.blog-title-card .label,
+.contact-title-card .label,
+.logo-strip .jurisdiction-title .label{
+  display:table !important;
+  width:auto !important;
+  max-width:100% !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+  color:#b8872e !important;
+  background:rgba(201,168,76,.15) !important;
+  border:1px solid rgba(201,168,76,.24) !important;
+  border-radius:999px !important;
+  padding:6px 12px !important;
+  font-weight:900 !important;
+  letter-spacing:.14em !important;
+  line-height:1 !important;
+}
+
+.section-head h2,
+.service-title-card h2,
+.team-title-card h2,
+.blog-title-card h2,
+.contact-title-card h2,
+.logo-strip .jurisdiction-title h2{
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  color:#445066 !important;
+  overflow-wrap:normal !important;
+  word-break:normal !important;
+}
+
+.section-head p,
+.service-title-card p,
+.team-title-card p,
+.blog-title-card p,
+.contact-title-card p,
+.logo-strip .jurisdiction-title p{
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  color:#667085 !important;
+  overflow-wrap:normal !important;
+  word-break:normal !important;
+}
+
+/* Short first title tiles: title + note stay centered too */
+.logo-strip .jurisdiction-title,
+body.services-page #services .service-title-card,
+body.packages-page #packages .service-title-card,
+body.faqs-page #faq .faq-title-card,
+body.teams-page #team-members .team-title-card,
+body.blogs-page #latest-blogs .blog-title-card,
+body.contact-page #contact-form .contact-title-card{
+  text-align:center !important;
+}
+
+.logo-strip .jurisdiction-title h2,
+.logo-strip .jurisdiction-title p,
+body.services-page #services .service-title-card h2,
+body.services-page #services .service-title-card p,
+body.packages-page #packages .service-title-card h2,
+body.packages-page #packages .service-title-card p,
+body.faqs-page #faq .faq-title-card h2,
+body.faqs-page #faq .faq-title-card p,
+body.teams-page #team-members .team-title-card h2,
+body.teams-page #team-members .team-title-card p,
+body.blogs-page #latest-blogs .blog-title-card h2,
+body.blogs-page #latest-blogs .blog-title-card p,
+body.contact-page #contact-form .contact-title-card h2,
+body.contact-page #contact-form .contact-title-card p{
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  max-width:700px !important;
+}
+
+/* Keep long CTA/final title frames readable: label centered, title/comment left */
+.cta-card .label,
+.cta .label{
+  display:table !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  color:#b8872e !important;
+  background:rgba(201,168,76,.15) !important;
+  border:1px solid rgba(201,168,76,.24) !important;
+  border-radius:999px !important;
+  padding:6px 12px !important;
+}
+.cta-card h2,
+.cta-card p,
+.cta h2,
+.cta p{
+  text-align:left !important;
+}
+
+/* Contact hero desktop fit fix */
+body.contact-page .contact-hero{
+  min-height:clamp(520px,calc(100svh - 76px),680px) !important;
+  padding:70px 0 !important;
+  display:flex !important;
+  align-items:center !important;
+}
+body.contact-page .contact-hero .hero-inner{
+  grid-template-columns:1fr !important;
+  max-width:850px !important;
+  min-height:auto !important;
+  gap:0 !important;
+  align-content:center !important;
+  align-items:center !important;
+}
+body.contact-page .contact-hero .hero-inner > div:first-child{
+  max-width:760px !important;
+  transform:none !important;
+}
+body.contact-page .contact-hero h1{
+  max-width:760px !important;
+  font-size:clamp(38px,5.2vw,64px) !important;
+  line-height:1.04 !important;
+}
+body.contact-page .contact-hero .hero-lead{
+  max-width:690px !important;
+}
+
+@media(min-width:961px) and (max-height:760px){
+  body.contact-page .contact-hero{
+    min-height:560px !important;
+    padding:52px 0 !important;
+  }
+  body.contact-page .contact-hero h1{
+    font-size:clamp(36px,4.4vw,56px) !important;
+  }
+  body.contact-page .contact-hero .hero-lead{
+    font-size:16px !important;
+  }
+}
+
+@media(max-width:620px){
+  .section-head .label,
+  .service-title-card .label,
+  .team-title-card .label,
+  .blog-title-card .label,
+  .contact-title-card .label,
+  .logo-strip .jurisdiction-title .label,
+  .cta-card .label,
+  .cta .label{
+    font-size:10px !important;
+    letter-spacing:.11em !important;
+    padding:6px 10px !important;
+  }
+  body.contact-page .contact-hero{
+    min-height:100svh !important;
+    padding:84px 0 34px !important;
+  }
+  body.contact-page .contact-hero h1{
+    font-size:clamp(36px,11vw,50px) !important;
+  }
+}
+
+
+
+/* =========================================================
+   FINAL UNIFORM TITLE BOLDNESS RULE
+   Softer, consistent title weight across pages.
+   Hero cards are intentionally excluded.
+   ========================================================= */
+main .section-head h2,
+main .service-title-card h2,
+main .faq-title-card h2,
+main .team-title-card h2,
+main .blog-title-card h2,
+main .contact-title-card h2,
+.logo-strip .jurisdiction-title h2,
+.section-dropdown > summary strong,
+.service-accordion > summary strong{
+  font-weight:700 !important;
+  color:#445066 !important;
+  text-shadow:none !important;
+}
+
+/* Keep dark CTA title readable while matching the same softer weight */
+main .cta h2,
+main .cta-card h2{
+  font-weight:700 !important;
+  color:#ffffff !important;
+  text-shadow:none !important;
+}
+
+/* Ensure the mini gold label stays polished, not muddy */
+main .section-head .label,
+main .service-title-card .label,
+main .faq-title-card .label,
+main .team-title-card .label,
+main .blog-title-card .label,
+main .contact-title-card .label,
+.logo-strip .jurisdiction-title .label{
+  color:#a97922 !important;
+  background:rgba(201,168,76,.14) !important;
+  border-color:rgba(201,168,76,.26) !important;
+  font-weight:850 !important;
+}
+
 </style>
 </head>
 <body class="teams-page">
