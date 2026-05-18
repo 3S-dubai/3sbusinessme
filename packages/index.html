@@ -7270,6 +7270,62 @@ section#faq .dropdown-list summary{
   }
 }
 
+
+
+/* ==================================================
+   FINAL QA: mobile title/card alignment + overflow fix
+   Keeps hero cards unchanged. Prevents long section titles
+   from being clipped on Packages/Services/FAQ/Teams.
+   ================================================== */
+.section-dropdown,
+.card,
+.cta,
+.support-box{
+  max-width:100% !important;
+}
+.section-dropdown > summary{
+  min-width:0 !important;
+  overflow:hidden !important;
+}
+.section-dropdown > summary span{
+  min-width:0 !important;
+  width:100% !important;
+  max-width:100% !important;
+}
+.section-dropdown > summary strong,
+.section-dropdown > summary em,
+.section h2,
+.card h3,
+.cta h2{
+  max-width:100% !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+}
+@media(max-width:620px){
+  .section-dropdown{
+    border-radius:24px !important;
+  }
+  .section-dropdown > summary{
+    padding-left:18px !important;
+    padding-right:18px !important;
+    gap:12px !important;
+  }
+  .section-dropdown > summary strong{
+    font-size:clamp(21px,7vw,28px) !important;
+    line-height:1.12 !important;
+    letter-spacing:-.035em !important;
+  }
+  .section-dropdown > summary em{
+    font-size:13.5px !important;
+    line-height:1.55 !important;
+  }
+  .section-dropdown > summary::after{
+    width:30px !important;
+    height:30px !important;
+    flex:0 0 30px !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -7328,7 +7384,7 @@ section#faq .dropdown-list summary{
       <a href="../services/">Services</a>
       <a href="./">Packages</a>
       <a href="../faqs/">FAQs</a>
-      <a href="https://3sbusinessme.com/teams/">Teams</a>
+      <a href="../teams/">Teams</a>
       <a href="https://3sbusinessme.com/blogs/">Blogs</a>
       <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
     </nav>
@@ -7342,7 +7398,7 @@ section#faq .dropdown-list summary{
     <a href="../services/">Services</a>
     <a href="./">Packages</a>
     <a href="../faqs/">FAQs</a>
-    <a href="https://3sbusinessme.com/teams/">Teams</a>
+    <a href="../teams/">Teams</a>
     <a href="https://3sbusinessme.com/blogs/">Blogs</a>
     <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
   </div>
