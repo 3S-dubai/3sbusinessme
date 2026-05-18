@@ -4712,6 +4712,64 @@ body.packages-page .service-accordion > summary em{
   }
 }
 
+
+/* FINAL HARD SYNC - HOMEPAGE NAV + FOOTER STRUCTURE */
+.site-header .main-nav,
+.site-header .main-nav a,
+.site-header .mobile-menu,
+.site-header .mobile-menu a,
+.site-header .css-menu-button,
+.site-header .menu-button,
+.site-header label[for="mobileToggle"]{
+  text-shadow:none !important;
+  filter:none !important;
+  box-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+}
+
+.footer-grid.footer-grid-reworked{
+  display:grid !important;
+  grid-template-columns:1.15fr .9fr 1.25fr !important;
+  gap:34px !important;
+  align-items:start !important;
+}
+
+.footer-brand-services .footer-services-block{
+  margin-top:24px !important;
+}
+
+.footer-company-contact .footer-contact-block{
+  padding-top:22px !important;
+  margin-top:22px !important;
+  border-top:1px solid rgba(255,255,255,.10) !important;
+}
+
+.footer-map-only .footer-map-card{
+  margin-top:0 !important;
+  min-height:260px !important;
+}
+
+.footer-map-only .footer-map-frame{
+  min-height:260px !important;
+}
+
+@media(max-width:960px){
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr 1fr !important;
+  }
+
+  .footer-map-only{
+    grid-column:1 / -1 !important;
+  }
+}
+
+@media(max-width:620px){
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+  }
+}
+
 </style>
 </head>
 
