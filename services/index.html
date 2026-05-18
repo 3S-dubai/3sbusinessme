@@ -5013,109 +5013,297 @@ body.services-page .hero.services-hero::after{
 
 
 
-/* FINAL SERVICES TYPOGRAPHY ONLY - MATCH APPROVED HOME PAGE */
+
+
+/* FINAL SERVICES FONT SIZE - EXACT HOME PAGE SCALE */
 body.services-page{
   font-family:var(--font-main) !important;
+  font-size:16px !important;
+  line-height:1.68 !important;
+  font-weight:400 !important;
+  letter-spacing:-0.01em !important;
 }
 
 body.services-page h1,
 body.services-page h2,
 body.services-page h3,
-body.services-page .hero h1,
-body.services-page .service-title-card h2,
-body.services-page .service-accordion > summary strong,
-body.services-page .cta-card h2{
+body.services-page h4,
+body.services-page .section-dropdown > summary strong,
+body.services-page .btn,
+body.services-page .main-nav,
+body.services-page .mobile-menu a,
+body.services-page .badge,
+body.services-page .label,
+body.services-page details summary{
   font-family:var(--font-heading) !important;
 }
 
+/* Same as homepage hero */
 body.services-page .hero h1{
-  font-size:clamp(42px,6vw,76px) !important;
-  line-height:.98 !important;
-  letter-spacing:-.06em !important;
+  font-size:clamp(40px,4.45vw,56px) !important;
+  line-height:1.06 !important;
+  letter-spacing:-.045em !important;
+  font-weight:800 !important;
+  max-width:720px !important;
 }
 
 body.services-page .hero-lead{
-  font-size:17px !important;
-  line-height:1.65 !important;
+  font-size:16px !important;
+  line-height:1.72 !important;
+  font-weight:500 !important;
+  letter-spacing:-.012em !important;
+  max-width:620px !important;
 }
 
-body.services-page .service-title-card h2,
-body.services-page .service-accordion > summary strong,
-body.services-page .cta-card h2{
-  font-size:clamp(32px,4vw,48px) !important;
-  line-height:1.05 !important;
-  letter-spacing:-.045em !important;
+body.services-page .badge{
+  font-size:10.5px !important;
+  line-height:1 !important;
+  font-weight:800 !important;
+  letter-spacing:.12em !important;
 }
 
-body.services-page .service-title-card p,
-body.services-page .service-accordion > summary em,
-body.services-page .cta-card p{
+body.services-page .btn{
+  font-size:13.5px !important;
+  font-weight:800 !important;
+  letter-spacing:-.005em !important;
+  min-height:48px !important;
+}
+
+body.services-page .main-nav{
+  font-size:13.5px !important;
+  font-weight:700 !important;
+  letter-spacing:-.01em !important;
+}
+
+body.services-page .mobile-menu a{
+  font-size:14px !important;
+  font-weight:700 !important;
+}
+
+/* Same as homepage section titles */
+body.services-page .section h2,
+body.services-page .service-title-card h2{
+  font-size:clamp(29px,3vw,40px) !important;
+  line-height:1.12 !important;
+  letter-spacing:-.04em !important;
+  font-weight:800 !important;
+}
+
+/* Same as homepage section intro text */
+body.services-page .section-head p,
+body.services-page .service-title-card p{
   font-size:15px !important;
-  line-height:1.75 !important;
+  line-height:1.72 !important;
+  font-weight:500 !important;
+  letter-spacing:-.01em !important;
 }
 
+body.services-page .label,
+body.services-page .service-title-card .label{
+  font-size:10.5px !important;
+  font-weight:800 !important;
+  letter-spacing:.14em !important;
+}
+
+/* Same as homepage parent dropdown title */
+body.services-page .section-dropdown > summary strong,
+body.services-page .service-accordion > summary strong{
+  font-size:clamp(22px,2.25vw,29px) !important;
+  line-height:1.16 !important;
+  letter-spacing:-.035em !important;
+  font-weight:800 !important;
+}
+
+body.services-page .section-dropdown > summary em,
+body.services-page .service-accordion > summary em{
+  font-size:14px !important;
+  line-height:1.62 !important;
+  font-weight:500 !important;
+  letter-spacing:-.01em !important;
+}
+
+body.services-page details summary{
+  font-size:14px !important;
+  line-height:1.36 !important;
+  font-weight:800 !important;
+  letter-spacing:-.01em !important;
+}
+
+body.services-page .detail-body{
+  font-size:13.5px !important;
+  line-height:1.72 !important;
+  font-weight:500 !important;
+  letter-spacing:-.008em !important;
+}
+
+/* Same as homepage card sizing */
 body.services-page .service-clean-card h3,
 body.services-page .route-comparison-grid h3{
-  font-size:22px !important;
-  line-height:1.12 !important;
-  letter-spacing:-.03em !important;
+  font-size:21px !important;
+  line-height:1.16 !important;
+  letter-spacing:-.025em !important;
+  font-weight:800 !important;
 }
 
 body.services-page .service-clean-card p,
 body.services-page .route-comparison-grid p,
-body.services-page .detail-body,
 body.services-page .document-list-clean li,
 body.services-page .process-clean-list span{
   font-size:14px !important;
-  line-height:1.8 !important;
+  line-height:1.72 !important;
+  font-weight:500 !important;
+  letter-spacing:-.008em !important;
 }
 
-body.services-page .badge,
-body.services-page .label,
-body.services-page .service-title-card .label,
-body.services-page .service-accordion > summary small,
-body.services-page .service-clean-card span{
-  font-size:11px !important;
-  font-weight:900 !important;
-  letter-spacing:.13em !important;
-  text-transform:uppercase !important;
-}
-
-body.services-page .btn{
-  font-size:14px !important;
+body.services-page .service-clean-card span,
+body.services-page .process-clean-list strong{
+  font-size:13px !important;
   font-weight:800 !important;
 }
 
-@media(max-width:620px){
+/* Same as homepage CTA */
+body.services-page .cta-card h2{
+  font-size:clamp(28px,2.8vw,38px) !important;
+  line-height:1.12 !important;
+  letter-spacing:-.04em !important;
+  font-weight:800 !important;
+}
+
+body.services-page .cta-card p{
+  font-size:15px !important;
+  line-height:1.72 !important;
+  font-weight:500 !important;
+}
+
+body.services-page footer{
+  font-size:13px !important;
+  line-height:1.72 !important;
+  font-weight:500 !important;
+}
+
+@media(max-width:991px){
   body.services-page .hero h1{
-    font-size:42px !important;
-    line-height:1 !important;
-    letter-spacing:-.055em !important;
+    font-size:clamp(36px,6vw,48px) !important;
+    line-height:1.06 !important;
   }
 
   body.services-page .hero-lead{
     font-size:15px !important;
-    line-height:1.7 !important;
   }
 
-  body.services-page .service-title-card h2,
-  body.services-page .service-accordion > summary strong,
-  body.services-page .cta-card h2{
-    font-size:32px !important;
-    line-height:1.06 !important;
-    letter-spacing:-.04em !important;
+  body.services-page .section h2,
+  body.services-page .service-title-card h2{
+    font-size:clamp(27px,4.5vw,35px) !important;
   }
 
-  body.services-page .service-title-card p,
-  body.services-page .service-accordion > summary em,
-  body.services-page .cta-card p{
-    font-size:15px !important;
-    line-height:1.7 !important;
+  body.services-page .section-dropdown > summary strong,
+  body.services-page .service-accordion > summary strong{
+    font-size:clamp(21px,3.7vw,28px) !important;
+  }
+}
+
+@media(max-width:620px){
+  body.services-page{
+    font-size:14.5px !important;
+    line-height:1.62 !important;
+  }
+
+  body.services-page .hero h1{
+    font-size:clamp(31px,8.6vw,38px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-.035em !important;
+  }
+
+  body.services-page .hero-lead{
+    font-size:14px !important;
+    line-height:1.62 !important;
+    font-weight:500 !important;
+  }
+
+  body.services-page .badge{
+    font-size:9.5px !important;
+    letter-spacing:.1em !important;
+  }
+
+  body.services-page .hero-actions .btn{
+    font-size:13.5px !important;
+    min-height:48px !important;
+  }
+
+  body.services-page .section h2,
+  body.services-page .service-title-card h2{
+    font-size:clamp(24px,6.8vw,30px) !important;
+    line-height:1.14 !important;
+    letter-spacing:-.03em !important;
+  }
+
+  body.services-page .section-head p,
+  body.services-page .service-title-card p{
+    font-size:14px !important;
+    line-height:1.65 !important;
+  }
+
+  body.services-page .section-dropdown > summary strong,
+  body.services-page .service-accordion > summary strong{
+    font-size:20.5px !important;
+    line-height:1.16 !important;
+    letter-spacing:-.025em !important;
+  }
+
+  body.services-page .section-dropdown > summary em,
+  body.services-page .service-accordion > summary em{
+    font-size:13px !important;
+    line-height:1.55 !important;
+  }
+
+  body.services-page details summary{
+    font-size:13.5px !important;
+  }
+
+  body.services-page .detail-body{
+    font-size:13px !important;
+    line-height:1.68 !important;
   }
 
   body.services-page .service-clean-card h3,
   body.services-page .route-comparison-grid h3{
-    font-size:21px !important;
+    font-size:20px !important;
+  }
+
+  body.services-page .service-clean-card p,
+  body.services-page .route-comparison-grid p,
+  body.services-page .document-list-clean li,
+  body.services-page .process-clean-list span{
+    font-size:13px !important;
+    line-height:1.68 !important;
+  }
+
+  body.services-page .cta-card h2{
+    font-size:25px !important;
+  }
+
+  body.services-page .cta-card p{
+    font-size:14px !important;
+  }
+
+  body.services-page footer{
+    font-size:12.5px !important;
+  }
+}
+
+@media(max-width:380px){
+  body.services-page .hero h1{
+    font-size:29px !important;
+  }
+
+  body.services-page .section-dropdown > summary strong,
+  body.services-page .service-accordion > summary strong{
+    font-size:19.5px !important;
+  }
+
+  body.services-page .section h2,
+  body.services-page .service-title-card h2{
+    font-size:23px !important;
   }
 }
 
@@ -5133,13 +5321,13 @@ body.services-page .btn{
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
 <div class="container header-inner">
-<a aria-label="3S Business Services Home" class="logo" href="../index.html">
+<a aria-label="3S Business Services Home" class="logo" href="../">
 <span class="logo-box">
 <img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
 </span>
 </a>
 <nav aria-label="Main navigation" class="main-nav">
-<a href="../index.html">Home</a>
+<a href="../">Home</a>
 <a href="https://3sbusinessme.com/services/">Services</a>
 <a href="https://3sbusinessme.com/packages/">Packages</a>
 <a href="https://3sbusinessme.com/faqs/">FAQs</a>
@@ -5151,7 +5339,7 @@ body.services-page .btn{
 </div>
 <input class="mobile-toggle-checkbox" id="mobileToggle" type="checkbox"/>
 <div class="mobile-menu" id="mobileMenu">
-<a href="../index.html">Home</a>
+<a href="../">Home</a>
 <a href="https://3sbusinessme.com/services/">Services</a>
 <a href="https://3sbusinessme.com/packages/">Packages</a>
 <a href="https://3sbusinessme.com/faqs/">FAQs</a>
@@ -5360,7 +5548,7 @@ body.services-page .btn{
 <footer class="footer">
 <div class="container footer-grid">
 <div>
-<a aria-label="3S Business Services Home" class="footer-logo" href="../index.html">
+<a aria-label="3S Business Services Home" class="footer-logo" href="../">
 <img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
 </a>
 <p>Corporate setup and business support services in Dubai and across the UAE.</p>
