@@ -6987,6 +6987,61 @@ body.teams-page .teams-hero .hero-visual-card{
     grid-template-columns:1fr !important;
   }
 }
+
+
+/* TEAMS BLUE CTA BOX - FINAL SAFE FIX */
+body.teams-page #team-support .cta-card{
+  width:100% !important;
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+  align-items:center !important;
+  gap:24px !important;
+  padding:34px 36px !important;
+  border-radius:32px !important;
+  background:radial-gradient(circle at 16% 8%,rgba(201,168,76,.24),transparent 28%),linear-gradient(135deg,var(--navy),var(--navy-2)) !important;
+  border:1px solid rgba(228,198,111,.26) !important;
+  box-shadow:0 24px 70px rgba(6,27,56,.18) !important;
+  overflow:hidden !important;
+}
+body.teams-page #team-support .cta-card > div{
+  min-width:0 !important;
+}
+body.teams-page #team-support .cta-card .label{
+  display:block !important;
+  width:auto !important;
+  background:transparent !important;
+  border:0 !important;
+  border-radius:0 !important;
+  padding:0 !important;
+  text-align:left !important;
+  color:var(--gold-2) !important;
+}
+body.teams-page #team-support .cta-card h2{
+  color:#fff !important;
+  margin:0 !important;
+  max-width:760px !important;
+}
+body.teams-page #team-support .cta-card p{
+  color:rgba(255,255,255,.76) !important;
+  max-width:760px !important;
+  margin-top:10px !important;
+}
+body.teams-page #team-support .cta-card .btn{
+  justify-self:end !important;
+  white-space:nowrap !important;
+}
+@media(max-width:760px){
+  body.teams-page #team-support .cta-card{
+    grid-template-columns:1fr !important;
+    padding:28px 22px !important;
+    border-radius:28px !important;
+    gap:18px !important;
+  }
+  body.teams-page #team-support .cta-card .btn{
+    width:100% !important;
+    justify-self:stretch !important;
+  }
+}
 </style>
 </head>
 <body class="teams-page">
@@ -7126,11 +7181,7 @@ body.teams-page .teams-hero .hero-visual-card{
 <div class="footer-col footer-company-contact">
 <div class="footer-block">
 <h4>Company</h4>
-<ul>
-<li><a href="../packages/">Packages</a></li>
-<li><a href="../blogs/">Blogs</a></li>
-<li><a href="../faqs/">FAQs</a></li>
-</ul>
+<ul><li><a href="../packages/">Packages</a></li><li><a href="./">Teams</a></li><li><a href="../blogs/">Blogs</a></li><li><a href="../faqs/">FAQs</a></li><li><a href="../contact/">Contact Us</a></li></ul>
 </div>
 <div class="footer-block footer-contact-block">
 <h4>Contact</h4>
