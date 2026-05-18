@@ -6173,6 +6173,173 @@ body.packages-page .hero h1{
   }
 }
 
+
+/* FINAL FOOTER REWORK - 3 COLUMN STRUCTURE */
+.footer-grid.footer-grid-reworked{
+  display:grid !important;
+  grid-template-columns:1.15fr .9fr 1.25fr !important;
+  gap:34px !important;
+  align-items:start !important;
+}
+
+.footer-col{
+  min-width:0 !important;
+}
+
+.footer-block{
+  margin-top:24px !important;
+}
+
+.footer-brand-services > p{
+  max-width:360px !important;
+}
+
+.footer-services-block{
+  margin-top:24px !important;
+}
+
+.footer-company-contact .footer-block:first-child{
+  margin-top:0 !important;
+}
+
+.footer-contact-block{
+  padding-top:22px !important;
+  margin-top:22px !important;
+  border-top:1px solid rgba(255,255,255,.10) !important;
+}
+
+.footer-map-only{
+  display:block !important;
+}
+
+.footer-map-only .footer-map-card{
+  margin-top:0 !important;
+  height:100% !important;
+  min-height:260px !important;
+}
+
+.footer-map-only .footer-map-frame{
+  min-height:260px !important;
+}
+
+@media(max-width:960px){
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr 1fr !important;
+  }
+
+  .footer-map-only{
+    grid-column:1 / -1 !important;
+  }
+}
+
+@media(max-width:620px){
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+  }
+
+  .footer-contact-block{
+    padding-top:18px !important;
+    margin-top:18px !important;
+  }
+
+  .footer-map-only .footer-map-card,
+  .footer-map-only .footer-map-frame{
+    min-height:240px !important;
+  }
+}
+
+
+/* FINAL NAV LETTER SHADOW REMOVAL + PACKAGES TITLE ALIGNMENT */
+.site-header .main-nav,
+.site-header .main-nav a,
+.site-header .main-nav a *,
+.site-header .mobile-menu,
+.site-header .mobile-menu a,
+.site-header .mobile-menu a *,
+.site-header .css-menu-button,
+.site-header .menu-button,
+.site-header label[for="mobileToggle"]{
+  text-shadow:none !important;
+  filter:none !important;
+  box-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+  paint-order:normal !important;
+}
+
+.site-header .main-nav a,
+.site-header .mobile-menu a{
+  color:var(--navy) !important;
+}
+
+/* Packages title card content alignment */
+body.packages-page .packages-overview-section .service-title-card{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:center !important;
+  max-width:760px !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  text-align:center !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card .label,
+body.packages-page .packages-overview-section .service-title-card h2,
+body.packages-page .packages-overview-section .service-title-card p{
+  width:100% !important;
+  display:block !important;
+  text-align:center !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card .label{
+  margin-bottom:8px !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card h2{
+  max-width:720px !important;
+  margin-top:0 !important;
+  margin-bottom:0 !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card p{
+  max-width:680px !important;
+  margin-top:12px !important;
+  margin-bottom:0 !important;
+}
+
+body.packages-page .package-card,
+body.packages-page .package-top,
+body.packages-page .package-card ul,
+body.packages-page .package-card li{
+  text-align:left !important;
+}
+
+body.packages-page .section-dropdown > summary span,
+body.packages-page .service-accordion > summary span{
+  text-align:left !important;
+}
+
+body.packages-page .section-dropdown > summary em,
+body.packages-page .service-accordion > summary em{
+  margin-left:0 !important;
+  margin-right:0 !important;
+  text-align:left !important;
+}
+
+@media(max-width:620px){
+  body.packages-page .packages-overview-section .service-title-card{
+    max-width:100% !important;
+  }
+
+  body.packages-page .packages-overview-section .service-title-card h2,
+  body.packages-page .packages-overview-section .service-title-card p{
+    max-width:100% !important;
+  }
+}
+
 </style>
 </head>
 <body class="services-page">
@@ -6412,52 +6579,66 @@ body.packages-page .hero h1{
 </section>
 </main>
 <footer class="footer">
-<div class="container footer-grid">
-<div>
-<a aria-label="3S Business Services Home" class="footer-logo" href="../">
-<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
-</a>
-<p>Corporate setup and business support services in Dubai and across the UAE.</p>
-</div>
-<div>
-<h4>Services</h4>
-<ul>
-<li><a href="./">All Services</a></li>
-<li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
-<li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
-<li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
-</ul>
-</div>
-<div>
-<h4>Company</h4>
-<ul>
-<li><a href="../packages/">Packages</a></li>
-<li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
-<li><a href="https://3sbusinessme.com/faqs/">FAQs</a></li>
-</ul>
-</div>
-<div>
-<h4>Contact</h4>
-<ul>
-<li><a href="tel:+97143955747">+971 4 395 5747</a></li>
-<li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
-<li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
-</ul>
-<div aria-label="Office location map preview" class="footer-map-card">
-<iframe allowfullscreen="" class="footer-map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
-</iframe>
-<div class="footer-map-content">
-<strong>Office Location</strong>
-<span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
-<a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" rel="noopener" target="_blank">Open Google Map</a>
-</div>
-</div>
-</div>
-</div>
-<div class="container footer-bottom">
-<p>© 2026 3S Business Services. All rights reserved.</p>
-<p>3S Business Services is a private business consultancy based in Dubai.</p>
-</div>
+  <div class="container footer-grid footer-grid-reworked">
+    <div class="footer-col footer-brand-services">
+      <a class="footer-logo" href="../" aria-label="3S Business Services Home">
+        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
+      </a>
+      <p>Corporate setup and business support services in Dubai and across the UAE.</p>
+
+      <div class="footer-block footer-services-block">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="./">All Services</a></li>
+          <li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
+          <li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
+          <li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-col footer-company-contact">
+      <div class="footer-block">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="../packages/">Packages</a></li>
+          <li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
+          <li><a href="https://3sbusinessme.com/faqs/">FAQs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-block footer-contact-block">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+97143955747">+971 4 395 5747</a></li>
+          <li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
+          <li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-col footer-map-only">
+      <div class="footer-map-card" aria-label="Office location map preview">
+        <iframe
+          class="footer-map-frame"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
+        </iframe>
+        <div class="footer-map-content">
+          <strong>Office Location</strong>
+          <span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
+          <a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" target="_blank" rel="noopener">Open Google Map</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2026 3S Business Services. All rights reserved.</p>
+    <p>3S Business Services is a private business consultancy based in Dubai.</p>
+  </div>
 </footer>
 <script>
 document.querySelectorAll(".mobile-menu a").forEach(link => {
