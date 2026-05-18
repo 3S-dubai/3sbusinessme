@@ -6993,283 +6993,147 @@ body.packages-page .service-accordion > summary em{
 
 
 
-/* ==========================================================
-   FINAL QA OVERRIDE - ALIGN SERVICES/PACKAGES WITH HOME MASTER
-   Purpose: stop older 4-column footer rules from shrinking map,
-   keep mobile/container spacing same as homepage, preserve warm glass nav.
-   ========================================================== */
-body.services-page .container,
-body.packages-page .container{
-  width:min(1120px,calc(100% - 36px)) !important;
-  margin-inline:auto !important;
-}
-
-body.services-page .footer-grid.footer-grid-reworked,
-body.packages-page .footer-grid.footer-grid-reworked,
-.footer-grid.footer-grid-reworked{
-  display:grid !important;
-  grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr) minmax(360px,1.32fr) !important;
-  gap:34px !important;
-  align-items:stretch !important;
-}
-
-body.services-page .footer-grid.footer-grid-reworked > .footer-col,
-body.packages-page .footer-grid.footer-grid-reworked > .footer-col,
-.footer-grid.footer-grid-reworked > .footer-col{
-  min-width:0 !important;
-}
-
-body.services-page .footer-map-only,
-body.packages-page .footer-map-only,
-.footer-map-only{
-  width:100% !important;
-  min-width:0 !important;
-  display:flex !important;
-}
-
-body.services-page .footer-map-only .footer-map-card,
-body.packages-page .footer-map-only .footer-map-card,
-.footer-map-only .footer-map-card{
-  width:100% !important;
-  min-width:0 !important;
-  min-height:320px !important;
-  height:100% !important;
-  margin-top:0 !important;
-  display:block !important;
-}
-
-body.services-page .footer-map-only .footer-map-frame,
-body.packages-page .footer-map-only .footer-map-frame,
-.footer-map-only .footer-map-frame{
+/* =========================================================
+   FINAL SAFE FIX: remove ONLY gold cylinder/pill behind
+   mini title labels inside title/header blocks.
+   Keeps hero badges, buttons, accordion icons, card icons,
+   call/WhatsApp circles, and testimonial tags untouched.
+   ========================================================= */
+.section-head > .label,
+.jurisdiction-title > .label,
+.cta > div > .label,
+.cta .section-head > .label,
+.support-box > .label,
+.support-box .section-head > .label,
+.title-card > .label,
+.title-tile > .label,
+.page-title-card > .label {
   display:block !important;
   width:100% !important;
-  min-width:100% !important;
-  min-height:320px !important;
-  height:320px !important;
+  max-width:100% !important;
+  min-width:0 !important;
+  margin:0 0 10px 0 !important;
+  padding:0 !important;
+  background:transparent !important;
+  background-image:none !important;
   border:0 !important;
-}
-
-body.services-page .footer-map-only .footer-map-content,
-body.packages-page .footer-map-only .footer-map-content,
-.footer-map-only .footer-map-content{
-  width:calc(100% - 28px) !important;
-  left:14px !important;
-  right:14px !important;
-  bottom:14px !important;
-}
-
-body.packages-page .packages-overview-section .service-title-card{
-  margin-left:auto !important;
-  margin-right:auto !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+  color:#9a7630 !important;
   text-align:center !important;
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:center !important;
-  justify-content:center !important;
-}
-
-body.packages-page .packages-overview-section .service-title-card .label,
-body.packages-page .packages-overview-section .service-title-card h2,
-body.packages-page .packages-overview-section .service-title-card p{
-  text-align:center !important;
-  margin-left:auto !important;
-  margin-right:auto !important;
-}
-
-@media(max-width:1100px){
-  body.services-page .footer-grid.footer-grid-reworked,
-  body.packages-page .footer-grid.footer-grid-reworked,
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(320px,1.15fr) !important;
-  }
-}
-
-@media(max-width:960px){
-  body.services-page .footer-grid.footer-grid-reworked,
-  body.packages-page .footer-grid.footer-grid-reworked,
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:1fr 1fr !important;
-    align-items:start !important;
-  }
-
-  body.services-page .footer-map-only,
-  body.packages-page .footer-map-only,
-  .footer-map-only{
-    grid-column:1 / -1 !important;
-  }
-
-  body.services-page .footer-map-only .footer-map-card,
-  body.services-page .footer-map-only .footer-map-frame,
-  body.packages-page .footer-map-only .footer-map-card,
-  body.packages-page .footer-map-only .footer-map-frame,
-  .footer-map-only .footer-map-card,
-  .footer-map-only .footer-map-frame{
-    min-height:300px !important;
-    height:300px !important;
-  }
+  font-weight:850 !important;
+  letter-spacing:.14em !important;
+  line-height:1.35 !important;
 }
 
 @media(max-width:620px){
-  body.services-page .footer-grid.footer-grid-reworked,
-  body.packages-page .footer-grid.footer-grid-reworked,
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:1fr !important;
-    gap:28px !important;
-  }
-
-  body.services-page .footer-map-only .footer-map-card,
-  body.services-page .footer-map-only .footer-map-frame,
-  body.packages-page .footer-map-only .footer-map-card,
-  body.packages-page .footer-map-only .footer-map-frame,
-  .footer-map-only .footer-map-card,
-  .footer-map-only .footer-map-frame{
-    min-height:270px !important;
-    height:270px !important;
-  }
-}
-
-
-
-/* FINAL PACKAGE CARD ALIGNMENT SYNC */
-body.packages-page .packages-grid{
-  align-items:stretch !important;
-}
-
-body.packages-page .package-card{
-  height:100% !important;
-  display:flex !important;
-  flex-direction:column !important;
-  gap:18px !important;
-  padding:26px 24px !important;
-}
-
-body.packages-page .package-featured{
-  transform:none !important;
-}
-
-body.packages-page .package-top{
-  padding-right:0 !important;
-  padding-top:0 !important;
-  min-height:132px !important;
-  display:grid !important;
-  align-content:start !important;
-  gap:10px !important;
-  text-align:left !important;
-}
-
-body.packages-page .package-featured .package-top{
-  padding-right:0 !important;
-}
-
-body.packages-page .package-featured{
-  padding-top:54px !important;
-}
-
-body.packages-page .popular-badge{
-  top:20px !important;
-  right:22px !important;
-  left:auto !important;
-}
-
-body.packages-page .package-card strong{
-  display:block !important;
-  min-height:42px !important;
-}
-
-body.packages-page .package-card p{
-  margin:0 !important;
-  min-height:48px !important;
-}
-
-body.packages-page .package-card ul{
-  margin-top:0 !important;
-  flex:1 1 auto !important;
-  align-content:start !important;
-}
-
-body.packages-page .package-card .btn{
-  margin-top:auto !important;
-}
-
-@media(max-width:960px){
-  body.packages-page .package-top{
-    min-height:auto !important;
-  }
-
-  body.packages-page .package-card strong,
-  body.packages-page .package-card p{
-    min-height:0 !important;
-  }
-}
-
-@media(max-width:620px){
-  body.packages-page .package-card{
-    padding:22px 20px !important;
-  }
-
-  body.packages-page .package-featured{
-    padding-top:54px !important;
-  }
-
-  body.packages-page .popular-badge{
-    top:18px !important;
-    left:20px !important;
-    right:auto !important;
+  .section-head > .label,
+  .jurisdiction-title > .label,
+  .cta > div > .label,
+  .cta .section-head > .label,
+  .support-box > .label,
+  .support-box .section-head > .label,
+  .title-card > .label,
+  .title-tile > .label,
+  .page-title-card > .label {
+    padding:0 !important;
+    border-radius:0 !important;
+    background:transparent !important;
+    border:0 !important;
   }
 }
 
 
 
 /* ================================
-   FINAL TITLE SIZE REFINEMENT
-   Reduce bold section/card titles across pages,
-   excluding hero and hero cards.
+   PACKAGES COMPACT TOPIC LAYOUT
+   Page-specific safe layout refinement
    ================================ */
-main .section h2,
-.logo-strip .jurisdiction-title h2{
-  font-size:clamp(27px,3.45vw,44px) !important;
-  line-height:1.1 !important;
+.packages-page .packages-overview-section{
+  padding-bottom:38px !important;
 }
-main .section-head h2{
-  font-size:clamp(27px,3.45vw,44px) !important;
+
+.packages-page .packages-topic-grid-wrap{
+  width:min(1120px,calc(100% - 36px));
+  margin:0 auto;
+  display:grid;
+  gap:18px;
+  padding:18px 0 54px;
 }
-main .section-dropdown > summary strong{
-  font-size:clamp(22px,2.65vw,34px) !important;
-  line-height:1.12 !important;
+
+.packages-page .packages-topic-grid-wrap > .section{
+  padding:0 !important;
+  background:transparent !important;
 }
-main .card h3,
-main .action-card h3,
-main .testimonial-flow-card h3{
-  font-size:19px !important;
-  line-height:1.18 !important;
-  letter-spacing:-.025em !important;
+
+.packages-page .packages-topic-grid-wrap > .section > .container{
+  width:100% !important;
+  margin:0 !important;
 }
-main details summary,
-section#faq .dropdown-list summary{
-  font-size:15px !important;
-  line-height:1.3 !important;
+
+.packages-page .packages-topic-grid-wrap .section-dropdown{
+  height:100%;
 }
-.footer h3,
-.footer h4{
-  font-size:15px !important;
-  line-height:1.25 !important;
+
+.packages-page .packages-topic-grid-wrap .section-dropdown > summary{
+  min-height:132px !important;
 }
-@media(max-width:620px){
-  main .section h2,
-  main .section-head h2,
-  .logo-strip .jurisdiction-title h2{
-    font-size:clamp(25px,8vw,36px) !important;
+
+@media(min-width:961px){
+  .packages-page .packages-topic-grid-wrap{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    align-items:stretch;
   }
-  main .section-dropdown > summary strong{
-    font-size:22px !important;
+
+  .packages-page .packages-topic-grid-wrap .section-dropdown{
+    display:flex;
+    flex-direction:column;
   }
-  main .card h3,
-  main .action-card h3,
-  main .testimonial-flow-card h3{
-    font-size:18px !important;
+
+  .packages-page .packages-topic-grid-wrap .section-dropdown > summary{
+    flex-shrink:0;
+  }
+
+  .packages-page .packages-topic-grid-wrap .section-dropdown[open] > .dropdown-list{
+    flex:1;
   }
 }
 
+@media(max-width:960px){
+  .packages-page .packages-topic-grid-wrap{
+    grid-template-columns:1fr;
+    padding:14px 0 42px;
+  }
+}
+
+/* Small gold title labels: plain text only, no cylinder/pill. */
+.packages-page .service-title-card .label,
+.packages-page .cta-card .label,
+.packages-page .section-dropdown > summary small{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  padding:0 !important;
+  min-height:0 !important;
+  color:#b08a35 !important;
+}
+
+.packages-page .service-title-card .label,
+.packages-page .cta-card .label{
+  display:block !important;
+  text-align:center !important;
+}
+
+.packages-page .section-dropdown > summary small{
+  display:block !important;
+  text-align:left !important;
+}
+
+.packages-page .service-final-cta{
+  padding-top:38px !important;
+}
 </style>
 <script type="application/ld+json">
 {
@@ -7316,38 +7180,34 @@ section#faq .dropdown-list summary{
 </div>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="../" aria-label="3S Business Services Home">
-      <span class="logo-box">
-        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
-      </span>
-    </a>
-
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="../">Home</a>
-      <a href="../services/">Services</a>
-      <a href="./">Packages</a>
-      <a href="../faqs/">FAQs</a>
-      <a href="https://3sbusinessme.com/teams/">Teams</a>
-      <a href="https://3sbusinessme.com/blogs/">Blogs</a>
-      <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-    </nav>
-    <label class="css-menu-button" for="mobileToggle" aria-label="Open menu">☰</label>
-  </div>
-
-  <input class="mobile-toggle-checkbox" type="checkbox" id="mobileToggle">
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="../">Home</a>
-    <a href="../services/">Services</a>
-    <a href="./">Packages</a>
-    <a href="../faqs/">FAQs</a>
-    <a href="https://3sbusinessme.com/teams/">Teams</a>
-    <a href="https://3sbusinessme.com/blogs/">Blogs</a>
-    <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-  </div>
+<div class="container header-inner">
+<a aria-label="3S Business Services Home" class="logo" href="../">
+<span class="logo-box">
+<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
+</span>
+</a>
+<nav aria-label="Main navigation" class="main-nav">
+<a href="../">Home</a>
+<a href="../services/">Services</a>
+<a href="./">Packages</a>
+<a href="https://3sbusinessme.com/faqs/">FAQs</a>
+<a href="https://3sbusinessme.com/teams/">Teams</a>
+<a href="https://3sbusinessme.com/blogs/">Blogs</a>
+<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+</nav>
+<label aria-label="Open menu" class="css-menu-button" for="mobileToggle">☰</label>
+</div>
+<input class="mobile-toggle-checkbox" id="mobileToggle" type="checkbox"/>
+<div class="mobile-menu" id="mobileMenu">
+<a href="../">Home</a>
+<a href="../services/">Services</a>
+<a href="./">Packages</a>
+<a href="https://3sbusinessme.com/faqs/">FAQs</a>
+<a href="https://3sbusinessme.com/teams/">Teams</a>
+<a href="https://3sbusinessme.com/blogs/">Blogs</a>
+<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+</div>
 </header>
-
 <main id="main">
 <section aria-label="3S corporate setup packages hero" class="hero packages-hero services-hero">
 <div class="container hero-inner">
@@ -7362,7 +7222,6 @@ section#faq .dropdown-list summary{
 </div>
 </div>
 </section>
-
 <section class="section service-page-band packages-overview-section" id="packages">
 <div class="container">
 <div class="section-head center service-title-card">
@@ -7385,7 +7244,6 @@ section#faq .dropdown-list summary{
 </ul>
 <a class="btn btn-dark" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20to%20choose%20the%20Starter%20Package." rel="noopener" target="_blank">Choose Starter</a>
 </article>
-
 <article class="package-card package-featured">
 <div class="popular-badge">Most Popular</div>
 <div class="package-top">
@@ -7401,7 +7259,6 @@ section#faq .dropdown-list summary{
 </ul>
 <a class="btn btn-gold" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20to%20discuss%20the%20Business%20Package." rel="noopener" target="_blank">Choose Business</a>
 </article>
-
 <article class="package-card">
 <div class="package-top">
 <span class="package-label">Premium Package</span>
@@ -7419,8 +7276,7 @@ section#faq .dropdown-list summary{
 </div>
 </div>
 </section>
-
-<section class="section service-page-band" id="cost-factors">
+<div class="packages-topic-grid-wrap"><section class="section service-page-band" id="cost-factors">
 <div class="container">
 <details class="section-dropdown service-accordion">
 <summary>
@@ -7440,9 +7296,7 @@ section#faq .dropdown-list summary{
 </div>
 </details>
 </div>
-</section>
-
-<section class="section service-page-band" id="included">
+</section><section class="section service-page-band" id="included">
 <div class="container">
 <details class="section-dropdown service-accordion">
 <summary>
@@ -7464,9 +7318,7 @@ section#faq .dropdown-list summary{
 </div>
 </details>
 </div>
-</section>
-
-<section class="section service-page-band" id="quote">
+</section><section class="section service-page-band" id="quote">
 <div class="container">
 <details class="section-dropdown service-accordion">
 <summary>
@@ -7484,9 +7336,7 @@ section#faq .dropdown-list summary{
 </div>
 </details>
 </div>
-</section>
-
-<section class="section service-page-band" id="faq">
+</section><section class="section service-page-band" id="faq">
 <div class="container">
 <details class="section-dropdown service-accordion">
 <summary>
@@ -7512,7 +7362,9 @@ section#faq .dropdown-list summary{
 </div>
 </details>
 </div>
-</section>
+</section></div>
+
+
 
 <section class="section service-page-band service-final-cta">
 <div class="container">
@@ -7527,68 +7379,57 @@ section#faq .dropdown-list summary{
 </div>
 </section>
 </main>
-
 <footer class="footer">
-  <div class="container footer-grid footer-grid-reworked">
-    <div class="footer-col footer-brand-services">
-      <a class="footer-logo" href="../" aria-label="3S Business Services Home">
-        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
-      </a>
-      <p>Business setup and corporate support services in Dubai and across the UAE.</p>
-
-      <div class="footer-block footer-services-block">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="../services/">All Services</a></li>
-          <li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
-          <li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
-          <li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-col footer-company-contact">
-      <div class="footer-block">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="./">Packages</a></li>
-          <li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
-          <li><a href="../faqs/">FAQs</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-block footer-contact-block">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+97143955747">+971 4 395 5747</a></li>
-          <li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
-          <li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-col footer-map-only">
-      <div class="footer-map-card" aria-label="Office location map preview">
-        <iframe
-          class="footer-map-frame"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
-        </iframe>
-        <div class="footer-map-content">
-          <strong>Office Location</strong>
-          <span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
-          <a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" target="_blank" rel="noopener">Open Google Map</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <p>© 2026 3S Business Services. All rights reserved.</p>
-    <p>3S Business Services is a private business consultancy based in Dubai.</p>
-  </div>
+<div class="container footer-grid footer-grid-reworked">
+<div class="footer-col footer-brand-services">
+<a aria-label="3S Business Services Home" class="footer-logo" href="../">
+<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
+</a>
+<p>Business setup and corporate support services in Dubai and across the UAE.</p>
+<div class="footer-block footer-services-block">
+<h4>Services</h4>
+<ul>
+<li><a href="../services/">All Services</a></li>
+<li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
+<li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
+<li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col footer-company-contact">
+<div class="footer-block">
+<h4>Company</h4>
+<ul>
+<li><a href="./">Packages</a></li>
+<li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
+<li><a href="https://3sbusinessme.com/faqs/">FAQs</a></li>
+</ul>
+</div>
+<div class="footer-block footer-contact-block">
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:+97143955747">+971 4 395 5747</a></li>
+<li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
+<li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
+</ul>
+</div>
+</div>
+<div class="footer-col footer-map-only">
+<div aria-label="Office location map preview" class="footer-map-card">
+<iframe allowfullscreen="" class="footer-map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
+</iframe>
+<div class="footer-map-content">
+<strong>Office Location</strong>
+<span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
+<a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" rel="noopener" target="_blank">Open Google Map</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 3S Business Services. All rights reserved.</p>
+<p>3S Business Services is a private business consultancy based in Dubai.</p>
+</div>
 </footer>
 <script>
 document.querySelectorAll(".mobile-menu a").forEach(link => {
