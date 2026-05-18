@@ -2768,11 +2768,14 @@ details[open] > summary{
   filter:none !important;
 }
 
-.logo-box{
-  background:transparent !important;
-  border:0 !important;
+.site-header .logo-box{
+  background:#ffffff !important;
+  border:1px solid rgba(255,255,255,.92) !important;
   box-shadow:none !important;
-  padding:0 !important;
+  padding:4px 8px !important;
+  border-radius:14px !important;
+  display:inline-flex !important;
+  align-items:center !important;
 }
 
 .logo-box img{
@@ -3763,9 +3766,8 @@ section#faq .dropdown-list .detail-body{
 
 .site-header .logo-box img,
 .site-header .logo img{
-  filter:
-    drop-shadow(0 2px 2px rgba(255,255,255,.55))
-    drop-shadow(0 5px 12px rgba(0,0,0,.30)) !important;
+  filter:contrast(1.16) saturate(1.08) brightness(1.04) !important;
+  image-rendering:auto !important;
 }
 
 /* Keep gold navigation readable on both the white safety layer and image background */
@@ -3850,6 +3852,98 @@ main{
     pointer-events:auto !important;
   }
 }
+
+
+/* FINAL TOP LOGO SHARPNESS - keep glass nav, clean only the logo surface */
+.site-header .logo-box{
+  background:#ffffff !important;
+  border:1px solid rgba(255,255,255,.95) !important;
+  border-radius:14px !important;
+  padding:4px 8px !important;
+  box-shadow:none !important;
+  filter:none !important;
+}
+.site-header .logo-box img,
+.site-header .logo img{
+  filter:contrast(1.16) saturate(1.08) brightness(1.04) !important;
+  opacity:1 !important;
+  image-rendering:auto !important;
+}
+@media(max-width:620px){
+  .site-header .logo-box{
+    padding:3px 7px !important;
+    border-radius:13px !important;
+  }
+}
+
+
+
+/* FINAL REQUEST FIX - logo carved clean, no backing/shade + hero covers fully */
+.site-header .logo,
+.site-header .logo-box{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  outline:0 !important;
+  padding:0 !important;
+}
+
+.site-header .logo::before,
+.site-header .logo::after,
+.site-header .logo-box::before,
+.site-header .logo-box::after{
+  content:none !important;
+  display:none !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+.site-header .logo img,
+.site-header .logo-box img{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  text-shadow:none !important;
+  filter:contrast(1.18) saturate(1.08) brightness(1.04) !important;
+  -webkit-filter:contrast(1.18) saturate(1.08) brightness(1.04) !important;
+  image-rendering:auto !important;
+}
+
+.hero{
+  background-color:#061b38 !important;
+  background-size:cover !important;
+  background-position:center center !important;
+  background-repeat:no-repeat !important;
+  min-height:calc(100svh - 88px) !important;
+  min-height:calc(100dvh - 88px) !important;
+}
+
+.hero::before{
+  content:none !important;
+  display:none !important;
+  background:transparent !important;
+}
+
+@media(max-width:991px){
+  .hero{
+    min-height:calc(100svh - 82px) !important;
+    min-height:calc(100dvh - 82px) !important;
+    background-size:cover !important;
+    background-position:62% center !important;
+  }
+}
+
+@media(max-width:620px){
+  .hero{
+    min-height:calc(100svh - 76px) !important;
+    min-height:calc(100dvh - 76px) !important;
+    background-size:cover !important;
+    background-position:72% center !important;
+    padding-top:56px !important;
+    padding-bottom:56px !important;
+  }
+}
+
 </style>
 </head>
 
