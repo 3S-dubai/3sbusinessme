@@ -6316,554 +6316,83 @@ body.packages-page .packages-hero::before{
 
 
 
-/* FINAL PACKAGES TITLE CARD ALIGNMENT - CLEAN FIX */
-body.packages-page .packages-overview-section .container{
-  display:block !important;
-}
 
-body.packages-page .packages-overview-section .service-title-card{
-  width:100% !important;
-  max-width:760px !important;
-  margin:0 auto 22px !important;
-  padding:22px 26px !important;
-  text-align:center !important;
-  display:block !important;
-}
-
-body.packages-page .packages-overview-section .service-title-card .label{
-  display:block !important;
-  width:100% !important;
-  margin:0 auto 8px !important;
-  text-align:center !important;
-}
-
-body.packages-page .packages-overview-section .service-title-card h2{
-  display:block !important;
-  max-width:760px !important;
-  margin:0 auto !important;
-  text-align:center !important;
-}
-
-body.packages-page .packages-overview-section .service-title-card p{
-  display:block !important;
-  max-width:720px !important;
-  margin:12px auto 0 !important;
-  text-align:center !important;
-}
-
-body.packages-page .packages-grid{
-  margin-top:0 !important;
-  align-items:stretch !important;
-}
-
-body.packages-page .package-card{
-  text-align:left !important;
-}
-
-body.packages-page .package-top{
-  text-align:left !important;
-}
-
-body.packages-page .section-dropdown > summary span,
-body.packages-page .service-accordion > summary span{
-  max-width:760px !important;
-  text-align:left !important;
-}
-
-body.packages-page .section-dropdown > summary em,
-body.packages-page .service-accordion > summary em{
-  max-width:680px !important;
-  text-align:left !important;
-  margin-left:0 !important;
-  margin-right:0 !important;
-}
-
-@media(max-width:620px){
-  body.packages-page .packages-overview-section .service-title-card{
-    max-width:100% !important;
-    margin-bottom:18px !important;
-    padding:20px 18px !important;
-  }
-
-  body.packages-page .packages-overview-section .service-title-card h2,
-  body.packages-page .packages-overview-section .service-title-card p{
-    max-width:100% !important;
-    text-align:center !important;
-  }
-}
-
-
-
-
-/* FINAL TITLE-CARD WARM GLASS NAV */
-.site-header{
-  background:
-    linear-gradient(180deg,
-      rgba(255,253,248,.86) 0%,
-      rgba(255,253,248,.62) 100%
-    ) !important;
-  border-bottom:1px solid rgba(201,168,76,.22) !important;
-  box-shadow:0 12px 34px rgba(6,27,56,.08) !important;
-  backdrop-filter:blur(18px) saturate(145%) !important;
-  -webkit-backdrop-filter:blur(18px) saturate(145%) !important;
-}
-
-.main-nav,
-.main-nav a,
-.css-menu-button,
-.menu-button,
-label[for="mobileToggle"]{
-  color:var(--navy) !important;
-  text-shadow:none !important;
-  -webkit-text-stroke:0 !important;
-  filter:none !important;
-  box-shadow:none !important;
-}
-
-.main-nav a:hover{
-  color:#9a7630 !important;
-}
-
-.header-actions .btn-outline,
-.site-header .btn-outline{
-  color:var(--navy) !important;
-  border-color:rgba(201,168,76,.24) !important;
-  background:rgba(255,253,248,.42) !important;
-  text-shadow:none !important;
-  box-shadow:none !important;
-}
-
-.mobile-menu{
-  background:
-    linear-gradient(180deg,
-      rgba(255,253,248,.96) 0%,
-      rgba(255,253,248,.90) 100%
-    ) !important;
-  border-top:1px solid rgba(201,168,76,.22) !important;
-  backdrop-filter:blur(18px) saturate(145%) !important;
-  -webkit-backdrop-filter:blur(18px) saturate(145%) !important;
-}
-
-.mobile-menu a{
-  color:var(--navy) !important;
-  text-shadow:none !important;
-  -webkit-text-stroke:0 !important;
-  filter:none !important;
-  box-shadow:none !important;
-  border-bottom-color:rgba(6,27,56,.10) !important;
-}
-
-.mobile-menu a:hover{
-  color:#9a7630 !important;
-}
-
-
-
-
-/* FINAL RESTORE NORMAL HEADER + REMOVE NAV FONT SHADE + 3-LINE HERO CONTROL */
-@media(min-width:992px){
-  .site-header > .container,
-  .site-header .header-inner{
-    width:min(1120px,calc(100% - 36px)) !important;
-    max-width:1120px !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
-    padding-left:0 !important;
-    padding-right:0 !important;
-  }
-
-  .header-inner{
-    display:flex !important;
-    align-items:center !important;
-    justify-content:space-between !important;
-    gap:22px !important;
-  }
-
-  .logo{
-    order:0 !important;
-    flex:0 0 auto !important;
-    margin-left:0 !important;
-    margin-right:0 !important;
-    justify-content:flex-start !important;
-  }
-
-  .main-nav{
-    order:0 !important;
-    flex:0 1 auto !important;
-    margin-left:auto !important;
-    margin-right:0 !important;
-    justify-content:flex-end !important;
-    text-align:right !important;
-  }
-
-  .header-actions{
-    order:0 !important;
-    flex:0 0 auto !important;
-    margin-left:0 !important;
-    margin-right:0 !important;
-  }
-
-  .logo-box img,
-  .logo img{
-    height:62px !important;
-    max-height:62px !important;
-    max-width:230px !important;
-  }
-}
-
-/* Strong nav font shade/shadow removal */
-.site-header .main-nav,
-.site-header .main-nav *,
-.site-header .mobile-menu,
-.site-header .mobile-menu *,
-.site-header .css-menu-button,
-.site-header .menu-button,
-.site-header label[for="mobileToggle"],
-.site-header a,
-.site-header button,
-.site-header .btn,
-.site-header .btn-outline,
-.site-header .btn-gold,
-.main-nav,
-.main-nav a,
-.mobile-menu,
-.mobile-menu a{
-  text-shadow:none !important;
-  box-shadow:none !important;
-  filter:none !important;
-  -webkit-text-stroke:0 !important;
-  paint-order:normal !important;
-}
-
-/* Hero headline visual limit */
-.hero h1{
-  max-width:720px !important;
-  line-height:1.05 !important;
-}
-
-/* Packages headline was wrapping to 4 lines - keep it within 3-line rhythm */
-body.packages-page .hero h1{
-  max-width:780px !important;
-  font-size:clamp(36px,3.65vw,48px) !important;
-  line-height:1.06 !important;
-  letter-spacing:-.04em !important;
-}
-
-@media(max-width:991px){
-  body.packages-page .hero h1{
-    max-width:680px !important;
-    font-size:clamp(32px,5.2vw,43px) !important;
-    line-height:1.08 !important;
-  }
-}
-
-@media(max-width:620px){
-  body.packages-page .hero h1{
-    max-width:100% !important;
-    font-size:clamp(28px,7.2vw,34px) !important;
-    line-height:1.1 !important;
-    letter-spacing:-.028em !important;
-  }
-}
-
-
-/* FINAL PACKAGES HERO ALIGNMENT MATCH HOME SERVICES */
-body.packages-page .hero.packages-hero .hero-inner,
-body.packages-page .hero.services-hero .hero-inner{
-  position:relative !important;
-  z-index:2 !important;
+/* FINAL HARD CENTER - PACKAGES TITLE CARD */
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card,
+html body.packages-page .packages-overview-section .service-title-card{
   display:grid !important;
-  grid-template-columns:1.08fr .92fr !important;
-  gap:48px !important;
+  place-items:center !important;
+  justify-items:center !important;
   align-items:center !important;
-  transform:translateY(34px) !important;
-}
-
-body.packages-page .hero .hero-inner > div:first-child{
-  max-width:720px !important;
-  justify-self:start !important;
-  text-align:left !important;
-}
-
-body.packages-page .hero h1{
-  max-width:720px !important;
-  font-size:clamp(40px,4.45vw,56px) !important;
-  line-height:1.06 !important;
-  letter-spacing:-.045em !important;
-  font-weight:800 !important;
-}
-
-body.packages-page .hero-lead{
-  max-width:620px !important;
-  font-size:16px !important;
-  line-height:1.72 !important;
-}
-
-body.packages-page .hero-actions{
-  justify-content:flex-start !important;
-  margin-top:30px !important;
-}
-
-@media(max-width:991px){
-  body.packages-page .hero.packages-hero .hero-inner,
-  body.packages-page .hero.services-hero .hero-inner{
-    grid-template-columns:1fr !important;
-    gap:28px !important;
-    transform:translateY(22px) !important;
-  }
-
-  body.packages-page .hero .hero-inner > div:first-child{
-    max-width:100% !important;
-  }
-
-  body.packages-page .hero h1{
-    max-width:620px !important;
-    font-size:clamp(36px,6vw,48px) !important;
-    line-height:1.06 !important;
-  }
-}
-
-@media(max-width:620px){
-  body.packages-page .hero.packages-hero .hero-inner,
-  body.packages-page .hero.services-hero .hero-inner{
-    transform:translateY(14px) !important;
-  }
-
-  body.packages-page .hero h1{
-    max-width:100% !important;
-    font-size:clamp(31px,8.6vw,38px) !important;
-    line-height:1.08 !important;
-    letter-spacing:-.035em !important;
-  }
-
-  body.packages-page .hero-lead{
-    font-size:14px !important;
-    line-height:1.62 !important;
-  }
-}
-
-
-/* FINAL FOOTER REWORK - 3 COLUMN STRUCTURE */
-.footer-grid.footer-grid-reworked{
-  display:grid !important;
-  grid-template-columns:1.15fr .9fr 1.25fr !important;
-  gap:34px !important;
-  align-items:start !important;
-}
-
-.footer-col{
-  min-width:0 !important;
-}
-
-.footer-block{
-  margin-top:24px !important;
-}
-
-.footer-brand-services > p{
-  max-width:360px !important;
-}
-
-.footer-services-block{
-  margin-top:24px !important;
-}
-
-.footer-company-contact .footer-block:first-child{
-  margin-top:0 !important;
-}
-
-.footer-contact-block{
-  padding-top:22px !important;
-  margin-top:22px !important;
-  border-top:1px solid rgba(255,255,255,.10) !important;
-}
-
-.footer-map-only{
-  display:block !important;
-}
-
-.footer-map-only .footer-map-card{
-  margin-top:0 !important;
-  height:100% !important;
-  min-height:260px !important;
-}
-
-.footer-map-only .footer-map-frame{
-  min-height:260px !important;
-}
-
-@media(max-width:960px){
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:1fr 1fr !important;
-  }
-
-  .footer-map-only{
-    grid-column:1 / -1 !important;
-  }
-}
-
-@media(max-width:620px){
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:1fr !important;
-    gap:28px !important;
-  }
-
-  .footer-contact-block{
-    padding-top:18px !important;
-    margin-top:18px !important;
-  }
-
-  .footer-map-only .footer-map-card,
-  .footer-map-only .footer-map-frame{
-    min-height:240px !important;
-  }
-}
-
-
-/* FINAL NAV LETTER SHADOW REMOVAL + PACKAGES TITLE ALIGNMENT */
-.site-header .main-nav,
-.site-header .main-nav a,
-.site-header .main-nav a *,
-.site-header .mobile-menu,
-.site-header .mobile-menu a,
-.site-header .mobile-menu a *,
-.site-header .css-menu-button,
-.site-header .menu-button,
-.site-header label[for="mobileToggle"]{
-  text-shadow:none !important;
-  filter:none !important;
-  box-shadow:none !important;
-  -webkit-text-stroke:0 !important;
-  paint-order:normal !important;
-}
-
-.site-header .main-nav a,
-.site-header .mobile-menu a{
-  color:var(--navy) !important;
-}
-
-/* Packages title card content alignment */
-body.packages-page .packages-overview-section .service-title-card{
-  display:flex !important;
-  flex-direction:column !important;
-  align-items:center !important;
-  justify-content:center !important;
+  width:100% !important;
   max-width:760px !important;
   margin-left:auto !important;
   margin-right:auto !important;
   text-align:center !important;
 }
 
-body.packages-page .packages-overview-section .service-title-card .label,
-body.packages-page .packages-overview-section .service-title-card h2,
-body.packages-page .packages-overview-section .service-title-card p{
-  width:100% !important;
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > .label,
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > h2,
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > p,
+html body.packages-page .packages-overview-section .service-title-card > .label,
+html body.packages-page .packages-overview-section .service-title-card > h2,
+html body.packages-page .packages-overview-section .service-title-card > p{
   display:block !important;
+  float:none !important;
+  clear:both !important;
+  width:100% !important;
   text-align:center !important;
+  justify-self:center !important;
+  align-self:center !important;
   margin-left:auto !important;
   margin-right:auto !important;
+  padding-left:0 !important;
+  padding-right:0 !important;
 }
 
-body.packages-page .packages-overview-section .service-title-card .label{
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > .label,
+html body.packages-page .packages-overview-section .service-title-card > .label{
+  max-width:100% !important;
+  margin-top:0 !important;
   margin-bottom:8px !important;
 }
 
-body.packages-page .packages-overview-section .service-title-card h2{
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > h2,
+html body.packages-page .packages-overview-section .service-title-card > h2{
   max-width:720px !important;
   margin-top:0 !important;
   margin-bottom:0 !important;
 }
 
-body.packages-page .packages-overview-section .service-title-card p{
+html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > p,
+html body.packages-page .packages-overview-section .service-title-card > p{
   max-width:680px !important;
   margin-top:12px !important;
   margin-bottom:0 !important;
 }
 
-body.packages-page .package-card,
-body.packages-page .package-top,
-body.packages-page .package-card ul,
-body.packages-page .package-card li{
-  text-align:left !important;
-}
-
-body.packages-page .section-dropdown > summary span,
-body.packages-page .service-accordion > summary span{
-  text-align:left !important;
-}
-
-body.packages-page .section-dropdown > summary em,
-body.packages-page .service-accordion > summary em{
-  margin-left:0 !important;
-  margin-right:0 !important;
+/* Keep only the package content cards left-aligned */
+html body.packages-page .packages-grid,
+html body.packages-page .package-card,
+html body.packages-page .package-card *,
+html body.packages-page .package-top,
+html body.packages-page .package-top *,
+html body.packages-page .package-card ul,
+html body.packages-page .package-card li{
   text-align:left !important;
 }
 
 @media(max-width:620px){
-  body.packages-page .packages-overview-section .service-title-card{
+  html body.packages-page main #packages.packages-overview-section > .container > .service-title-card,
+  html body.packages-page .packages-overview-section .service-title-card{
     max-width:100% !important;
   }
 
-  body.packages-page .packages-overview-section .service-title-card h2,
-  body.packages-page .packages-overview-section .service-title-card p{
+  html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > h2,
+  html body.packages-page main #packages.packages-overview-section > .container > .service-title-card > p,
+  html body.packages-page .packages-overview-section .service-title-card > h2,
+  html body.packages-page .packages-overview-section .service-title-card > p{
     max-width:100% !important;
-  }
-}
-
-
-/* FINAL HARD SYNC - HOMEPAGE NAV + FOOTER STRUCTURE */
-.site-header .main-nav,
-.site-header .main-nav a,
-.site-header .mobile-menu,
-.site-header .mobile-menu a,
-.site-header .css-menu-button,
-.site-header .menu-button,
-.site-header label[for="mobileToggle"]{
-  text-shadow:none !important;
-  filter:none !important;
-  box-shadow:none !important;
-  -webkit-text-stroke:0 !important;
-}
-
-.footer-grid.footer-grid-reworked{
-  display:grid !important;
-  grid-template-columns:1.15fr .9fr 1.25fr !important;
-  gap:34px !important;
-  align-items:start !important;
-}
-
-.footer-brand-services .footer-services-block{
-  margin-top:24px !important;
-}
-
-.footer-company-contact .footer-contact-block{
-  padding-top:22px !important;
-  margin-top:22px !important;
-  border-top:1px solid rgba(255,255,255,.10) !important;
-}
-
-.footer-map-only .footer-map-card{
-  margin-top:0 !important;
-  min-height:260px !important;
-}
-
-.footer-map-only .footer-map-frame{
-  min-height:260px !important;
-}
-
-@media(max-width:960px){
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:1fr 1fr !important;
-  }
-
-  .footer-map-only{
-    grid-column:1 / -1 !important;
-  }
-}
-
-@media(max-width:620px){
-  .footer-grid.footer-grid-reworked{
-    grid-template-columns:1fr !important;
-    gap:28px !important;
   }
 }
 
