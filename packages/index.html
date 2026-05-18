@@ -6566,6 +6566,82 @@ body.packages-page .hero h1{
   }
 }
 
+
+/* FINAL PACKAGES HERO ALIGNMENT MATCH HOME SERVICES */
+body.packages-page .hero.packages-hero .hero-inner,
+body.packages-page .hero.services-hero .hero-inner{
+  position:relative !important;
+  z-index:2 !important;
+  display:grid !important;
+  grid-template-columns:1.08fr .92fr !important;
+  gap:48px !important;
+  align-items:center !important;
+  transform:translateY(34px) !important;
+}
+
+body.packages-page .hero .hero-inner > div:first-child{
+  max-width:720px !important;
+  justify-self:start !important;
+  text-align:left !important;
+}
+
+body.packages-page .hero h1{
+  max-width:720px !important;
+  font-size:clamp(40px,4.45vw,56px) !important;
+  line-height:1.06 !important;
+  letter-spacing:-.045em !important;
+  font-weight:800 !important;
+}
+
+body.packages-page .hero-lead{
+  max-width:620px !important;
+  font-size:16px !important;
+  line-height:1.72 !important;
+}
+
+body.packages-page .hero-actions{
+  justify-content:flex-start !important;
+  margin-top:30px !important;
+}
+
+@media(max-width:991px){
+  body.packages-page .hero.packages-hero .hero-inner,
+  body.packages-page .hero.services-hero .hero-inner{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+    transform:translateY(22px) !important;
+  }
+
+  body.packages-page .hero .hero-inner > div:first-child{
+    max-width:100% !important;
+  }
+
+  body.packages-page .hero h1{
+    max-width:620px !important;
+    font-size:clamp(36px,6vw,48px) !important;
+    line-height:1.06 !important;
+  }
+}
+
+@media(max-width:620px){
+  body.packages-page .hero.packages-hero .hero-inner,
+  body.packages-page .hero.services-hero .hero-inner{
+    transform:translateY(14px) !important;
+  }
+
+  body.packages-page .hero h1{
+    max-width:100% !important;
+    font-size:clamp(31px,8.6vw,38px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-.035em !important;
+  }
+
+  body.packages-page .hero-lead{
+    font-size:14px !important;
+    line-height:1.62 !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
