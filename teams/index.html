@@ -7042,6 +7042,66 @@ body.teams-page #team-support .cta-card .btn{
     justify-self:stretch !important;
   }
 }
+
+
+/* Page 5 title size refinement + hero alignment sync - Teams only */
+body.teams-page #team-members .team-title-card h2,
+body.teams-page .teams-intro-section .team-title-card h2{
+  font-size:clamp(26px,3vw,34px) !important;
+  line-height:1.16 !important;
+  letter-spacing:-.025em !important;
+  font-weight:700 !important;
+}
+
+body.teams-page .teams-hero{
+  min-height:calc(100vh - 76px) !important;
+  padding:88px 0 84px !important;
+  display:flex !important;
+  align-items:center !important;
+  background-position:center center !important;
+}
+
+body.teams-page .teams-hero .hero-inner{
+  width:min(1120px,calc(100% - 36px)) !important;
+  margin-inline:auto !important;
+  grid-template-columns:1fr !important;
+  max-width:850px !important;
+  min-height:auto !important;
+  gap:0 !important;
+  align-content:center !important;
+  align-items:center !important;
+  transform:none !important;
+}
+
+body.teams-page .teams-hero .hero-inner > div:first-child{
+  max-width:760px !important;
+  transform:none !important;
+  align-self:center !important;
+}
+
+body.teams-page .teams-hero .team-hero-visual,
+body.teams-page .teams-hero .hero-visual-card{
+  display:none !important;
+}
+
+@media(max-width:620px){
+  body.teams-page #team-members .team-title-card h2,
+  body.teams-page .teams-intro-section .team-title-card h2{
+    font-size:26px !important;
+    line-height:1.18 !important;
+  }
+
+  body.teams-page .teams-hero{
+    min-height:100svh !important;
+    padding-top:84px !important;
+    padding-bottom:42px !important;
+  }
+
+  body.teams-page .teams-hero .hero-inner{
+    max-width:100% !important;
+  }
+}
+
 </style>
 </head>
 <body class="teams-page">
