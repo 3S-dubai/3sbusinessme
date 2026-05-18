@@ -1,0 +1,4 @@
+FINAL QA - Blogs gold accent + FAQ readability
+PASS: No structural issues found.
+
+Checked: duplicate IDs, empty href/buttons, internal static targets, Blogs gold accent, FAQ readability override.

@@ -1,0 +1,32 @@
+SEO + Schema QA Report
+======================
+
+Added/updated on every page:
+- Unique title tag
+- Meta description
+- Canonical URL
+- Robots directive
+- Open Graph tags
+- Twitter card tags
+- Theme color and geo tags
+- Organization, LocalBusiness, WebSite, WebPage/Breadcrumb schema
+
+Page-specific schema:
+- Home: WebPage
+- Services: ServicePage + ItemList of services
+- Packages: CollectionPage + OfferCatalog
+- FAQs: FAQPage with questions/answers
+- Teams: AboutPage + team ItemList
+- Blogs: Blog + BlogPosting ItemList
+- Contact: ContactPage
+
+Checks:
+index.html: title=True desc=True canonical=True schema_scripts=1 duplicate_ids=none empty_buttons=none
+services/index.html: title=True desc=True canonical=True schema_scripts=1 duplicate_ids=none empty_buttons=none
+packages/index.html: title=True desc=True canonical=True schema_scripts=2 duplicate_ids=none empty_buttons=none
+faqs/index.html: title=True desc=True canonical=True schema_scripts=1 duplicate_ids=none empty_buttons=none
+teams/index.html: title=True desc=True canonical=True schema_scripts=1 duplicate_ids=none empty_buttons=none
+blogs/index.html: title=True desc=True canonical=True schema_scripts=1 duplicate_ids=none empty_buttons=none
+contact/index.html: title=True desc=True canonical=True schema_scripts=1 duplicate_ids=none empty_buttons=none
+
+Internal anchor issues: none found
