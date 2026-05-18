@@ -6340,6 +6340,64 @@ body.packages-page .service-accordion > summary em{
   }
 }
 
+
+/* FINAL HARD SYNC - HOMEPAGE NAV + FOOTER STRUCTURE */
+.site-header .main-nav,
+.site-header .main-nav a,
+.site-header .mobile-menu,
+.site-header .mobile-menu a,
+.site-header .css-menu-button,
+.site-header .menu-button,
+.site-header label[for="mobileToggle"]{
+  text-shadow:none !important;
+  filter:none !important;
+  box-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+}
+
+.footer-grid.footer-grid-reworked{
+  display:grid !important;
+  grid-template-columns:1.15fr .9fr 1.25fr !important;
+  gap:34px !important;
+  align-items:start !important;
+}
+
+.footer-brand-services .footer-services-block{
+  margin-top:24px !important;
+}
+
+.footer-company-contact .footer-contact-block{
+  padding-top:22px !important;
+  margin-top:22px !important;
+  border-top:1px solid rgba(255,255,255,.10) !important;
+}
+
+.footer-map-only .footer-map-card{
+  margin-top:0 !important;
+  min-height:260px !important;
+}
+
+.footer-map-only .footer-map-frame{
+  min-height:260px !important;
+}
+
+@media(max-width:960px){
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr 1fr !important;
+  }
+
+  .footer-map-only{
+    grid-column:1 / -1 !important;
+  }
+}
+
+@media(max-width:620px){
+  .footer-grid.footer-grid-reworked{
+    grid-template-columns:1fr !important;
+    gap:28px !important;
+  }
+}
+
 </style>
 </head>
 <body class="services-page">
@@ -6353,33 +6411,36 @@ body.packages-page .service-accordion > summary em{
 </div>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-<div class="container header-inner">
-<a aria-label="3S Business Services Home" class="logo" href="../">
-<span class="logo-box">
-<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
-</span>
-</a>
-<nav aria-label="Main navigation" class="main-nav">
-<a href="../">Home</a>
-<a href="./">Services</a>
-<a href="../packages/">Packages</a>
-<a href="https://3sbusinessme.com/faqs/">FAQs</a>
-<a href="https://3sbusinessme.com/teams/">Teams</a>
-<a href="https://3sbusinessme.com/blogs/">Blogs</a>
-<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-</nav>
-<label aria-label="Open menu" class="css-menu-button" for="mobileToggle">☰</label>
-</div>
-<input class="mobile-toggle-checkbox" id="mobileToggle" type="checkbox"/>
-<div class="mobile-menu" id="mobileMenu">
-<a href="../">Home</a>
-<a href="./">Services</a>
-<a href="../packages/">Packages</a>
-<a href="https://3sbusinessme.com/faqs/">FAQs</a>
-<a href="https://3sbusinessme.com/teams/">Teams</a>
-<a href="https://3sbusinessme.com/blogs/">Blogs</a>
-<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-</div>
+  <div class="container header-inner">
+    <a class="logo" href="../" aria-label="3S Business Services Home">
+      <span class="logo-box">
+        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="../">Home</a>
+      <a href="./">Services</a>
+      <a href="../packages/">Packages</a>
+      <a href="https://3sbusinessme.com/faqs/">FAQs</a>
+      <a href="https://3sbusinessme.com/teams/">Teams</a>
+      <a href="https://3sbusinessme.com/blogs/">Blogs</a>
+      <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+    </nav>
+    <label class="css-menu-button" for="mobileToggle" aria-label="Open menu">☰</label>
+  </div>
+
+  <input class="mobile-toggle-checkbox" type="checkbox" id="mobileToggle">
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="../">Home</a>
+    <a href="./">Services</a>
+    <a href="../packages/">Packages</a>
+    <a href="https://3sbusinessme.com/faqs/">FAQs</a>
+    <a href="https://3sbusinessme.com/teams/">Teams</a>
+    <a href="https://3sbusinessme.com/blogs/">Blogs</a>
+    <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+  </div>
 </header>
 <main id="main">
 <section aria-label="3S business setup services hero" class="hero services-hero">
@@ -6584,12 +6645,12 @@ body.packages-page .service-accordion > summary em{
       <a class="footer-logo" href="../" aria-label="3S Business Services Home">
         <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
       </a>
-      <p>Corporate setup and business support services in Dubai and across the UAE.</p>
+      <p>Business setup and corporate support services in Dubai and across the UAE.</p>
 
       <div class="footer-block footer-services-block">
         <h4>Services</h4>
         <ul>
-          <li><a href="./">All Services</a></li>
+          <li><a href="../">All Services</a></li>
           <li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
           <li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
           <li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
