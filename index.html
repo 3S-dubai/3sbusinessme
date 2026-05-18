@@ -3249,6 +3249,324 @@ footer{
   }
 }
 
+
+/* FINAL ACTUAL GOOGLE MAP PREVIEW */
+.footer-map-card{
+  margin-top:18px !important;
+  padding:0 !important;
+  border:1px solid rgba(255,255,255,.12) !important;
+  border-radius:18px !important;
+  background:rgba(255,255,255,.04) !important;
+  overflow:hidden !important;
+  display:block !important;
+}
+
+.footer-map-frame{
+  width:100% !important;
+  height:210px !important;
+  border:0 !important;
+  display:block !important;
+  filter:saturate(.96) contrast(1.02) brightness(.96) !important;
+}
+
+.footer-map-content{
+  padding:14px 16px 16px !important;
+}
+
+.footer-map-content strong{
+  display:block !important;
+  color:#fff !important;
+  font-size:15px !important;
+  font-weight:800 !important;
+  margin-bottom:4px !important;
+}
+
+.footer-map-content span{
+  display:block !important;
+  color:rgba(255,255,255,.74) !important;
+  font-size:13px !important;
+  line-height:1.55 !important;
+  margin-bottom:10px !important;
+}
+
+.footer-map-link{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  padding:10px 14px !important;
+  border-radius:999px !important;
+  background:var(--gold) !important;
+  color:var(--navy) !important;
+  font-weight:800 !important;
+  text-decoration:none !important;
+  line-height:1 !important;
+}
+
+.footer-map-link:hover{
+  transform:translateY(-1px) !important;
+  box-shadow:0 10px 20px rgba(0,0,0,.16) !important;
+}
+
+.footer-map-visual,
+.footer-map-pin{
+  display:none !important;
+}
+
+
+/* FINAL REQUESTED POLISH - hero left, glossy hero, golden nav, FAQ title cleanup */
+
+/* Desktop hero content slightly more left */
+@media(min-width: 992px){
+  .hero .container.hero-inner{
+    transform:translateX(-34px) !important;
+  }
+}
+
+/* Subtle glossy hero font without dulling readability */
+.hero h1{
+  background:linear-gradient(180deg, #ffffff 0%, #ffffff 38%, #edf4ff 68%, #ffffff 100%) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:#ffffff !important;
+  text-shadow:
+    0 3px 14px rgba(0,0,0,.42),
+    0 0 18px rgba(255,255,255,.08) !important;
+  filter:drop-shadow(0 4px 10px rgba(0,0,0,.22)) !important;
+}
+
+.hero h1 span{
+  background:linear-gradient(180deg, #fff0bd 0%, #d9b95b 54%, #fff4cf 100%) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:var(--gold-2) !important;
+  text-shadow:
+    0 3px 12px rgba(0,0,0,.35),
+    0 0 14px rgba(201,168,76,.16) !important;
+}
+
+.hero-lead{
+  color:rgba(255,255,255,.90) !important;
+  text-shadow:0 3px 14px rgba(0,0,0,.42) !important;
+}
+
+.badge{
+  color:#ffe7a2 !important;
+  border-color:rgba(201,168,76,.45) !important;
+  background:rgba(201,168,76,.12) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.14),
+    0 8px 22px rgba(0,0,0,.10) !important;
+}
+
+/* Sticky/frozen nav visibility over light or white backgrounds */
+.site-header .main-nav a{
+  color:rgba(244,214,139,.92) !important;
+  text-shadow:
+    0 2px 9px rgba(0,0,0,.46),
+    0 0 10px rgba(201,168,76,.08) !important;
+}
+
+.site-header .main-nav a:hover{
+  color:#ffffff !important;
+}
+
+.site-header .header-actions .btn,
+.site-header .topbar-cta{
+  background:rgba(201,168,76,.86) !important;
+  color:#061b38 !important;
+  border-color:rgba(255,255,255,.18) !important;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.16),
+    inset 0 1px 0 rgba(255,255,255,.24) !important;
+}
+
+.site-header .header-actions .btn:hover,
+.site-header .topbar-cta:hover{
+  background:var(--gold-2) !important;
+  color:#061b38 !important;
+}
+
+/* Remove earlier blue shade from FAQ title/parent card */
+#faq .section-dropdown > summary,
+section#faq .section-dropdown > summary{
+  background:
+    radial-gradient(circle at 95% 15%, rgba(201,168,76,.10), transparent 30%),
+    #ffffff !important;
+  color:var(--navy) !important;
+}
+
+#faq .section-dropdown,
+section#faq .section-dropdown{
+  background:#ffffff !important;
+  border-color:var(--line) !important;
+  box-shadow:0 14px 40px rgba(6,27,56,.07) !important;
+}
+
+#faq .section-dropdown > summary strong,
+section#faq .section-dropdown > summary strong{
+  color:var(--navy) !important;
+}
+
+#faq .section-dropdown > summary em,
+section#faq .section-dropdown > summary em{
+  color:var(--body) !important;
+}
+
+#faq .section-dropdown > summary small,
+section#faq .section-dropdown > summary small{
+  color:#9a7630 !important;
+}
+
+@media(max-width: 620px){
+  .hero .container.hero-inner{
+    transform:none !important;
+  }
+
+  .hero h1{
+    filter:drop-shadow(0 3px 8px rgba(0,0,0,.26)) !important;
+    text-shadow:
+      0 4px 16px rgba(0,0,0,.55),
+      0 0 10px rgba(255,255,255,.06) !important;
+  }
+}
+
+
+/* TRUE FINAL FORCE FIX - hero left + glossy text + nav gold + FAQ no blue */
+
+/* HERO: move content left on desktop */
+@media(min-width: 992px){
+  main .hero .hero-inner,
+  .hero .hero-inner,
+  .hero .container.hero-inner{
+    margin-left:max(24px, calc((100vw - 1120px) / 2 - 52px)) !important;
+    margin-right:auto !important;
+    transform:none !important;
+  }
+
+  .hero .hero-inner > div:first-child{
+    max-width:740px !important;
+  }
+}
+
+/* HERO TEXT: visible glossy treatment */
+.hero h1,
+main .hero h1{
+  color:#ffffff !important;
+  background:linear-gradient(180deg,
+    #ffffff 0%,
+    #ffffff 24%,
+    #eef5ff 50%,
+    #ffffff 74%,
+    #d8e7f8 100%
+  ) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  text-shadow:none !important;
+  filter:
+    drop-shadow(0 4px 12px rgba(0,0,0,.38))
+    drop-shadow(0 0 10px rgba(255,255,255,.08)) !important;
+}
+
+.hero h1 span,
+main .hero h1 span{
+  color:var(--gold-2) !important;
+  background:linear-gradient(180deg,
+    #fff7d8 0%,
+    #f6d98c 36%,
+    #c9a84c 70%,
+    #fff1bd 100%
+  ) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  filter:drop-shadow(0 3px 10px rgba(0,0,0,.30)) !important;
+}
+
+/* NAV: make all frozen nav links lightly gold */
+.site-header nav a,
+.site-header .main-nav a,
+header.site-header nav a,
+header.site-header .main-nav a{
+  color:#f2d37b !important;
+  opacity:1 !important;
+  text-shadow:
+    0 2px 8px rgba(0,0,0,.55),
+    0 0 8px rgba(201,168,76,.12) !important;
+}
+
+.site-header nav a:hover,
+.site-header .main-nav a:hover{
+  color:#ffffff !important;
+}
+
+.site-header .btn,
+.site-header a.btn,
+.site-header .header-actions a,
+.site-header .topbar-cta{
+  color:#061b38 !important;
+  background:#d8b858 !important;
+  border-color:rgba(255,255,255,.18) !important;
+  box-shadow:0 10px 24px rgba(0,0,0,.16) !important;
+}
+
+/* FAQ TITLE CARD: remove any blue/dark shade */
+#faq > .container > details.section-dropdown,
+section#faq > .container > details.section-dropdown,
+#faq details.section-dropdown{
+  background:#ffffff !important;
+  border:1px solid rgba(6,27,56,.12) !important;
+  box-shadow:0 14px 40px rgba(6,27,56,.07) !important;
+}
+
+#faq details.section-dropdown > summary,
+section#faq details.section-dropdown > summary{
+  background:#ffffff !important;
+  color:#061b38 !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+#faq details.section-dropdown > summary::before,
+#faq details.section-dropdown > summary::after,
+section#faq details.section-dropdown > summary::before,
+section#faq details.section-dropdown > summary::after{
+  background:rgba(201,168,76,.12) !important;
+  color:#9a7630 !important;
+}
+
+#faq details.section-dropdown > summary small,
+#faq details.section-dropdown > summary strong,
+#faq details.section-dropdown > summary em,
+section#faq details.section-dropdown > summary small,
+section#faq details.section-dropdown > summary strong,
+section#faq details.section-dropdown > summary em{
+  color:inherit !important;
+}
+
+#faq details.section-dropdown > summary small{
+  color:#9a7630 !important;
+}
+
+#faq details.section-dropdown > summary strong{
+  color:#061b38 !important;
+}
+
+#faq details.section-dropdown > summary em{
+  color:#5F5F5F !important;
+}
+
+@media(max-width:620px){
+  .hero h1,
+  main .hero h1{
+    filter:
+      drop-shadow(0 4px 14px rgba(0,0,0,.50))
+      drop-shadow(0 0 8px rgba(255,255,255,.06)) !important;
+  }
+}
+
 </style>
 </head>
 
@@ -3618,15 +3936,17 @@ footer{
         <li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
         <li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
       </ul>
-      <div class="footer-map-card" aria-label="Office location map card">
-        <div class="footer-map-visual" aria-hidden="true">
-          <svg class="footer-map-pin" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 22s7-6.12 7-12a7 7 0 1 0-14 0c0 5.88 7 12 7 12Zm0-9.25A2.75 2.75 0 1 1 12 7.25a2.75 2.75 0 0 1 0 5.5Z"/>
-          </svg>
-        </div>
+      <div class="footer-map-card" aria-label="Office location map preview">
+        <iframe
+          class="footer-map-frame"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&output=embed">
+        </iframe>
         <div class="footer-map-content">
           <strong>Office Location</strong>
-          <span>Open our Dubai office location on Google Maps for directions and map view.</span>
+          <span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
           <a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" target="_blank" rel="noopener">Open Google Map</a>
         </div>
       </div>
