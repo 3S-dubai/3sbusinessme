@@ -1,0 +1,17 @@
+TITLE TILE ALIGNMENT QA
+
+Rules applied:
+- Whole section title tile/card remains centered.
+- Mini gold label is centered and restored to proper gold accent.
+- Main title is left aligned inside tile.
+- Small subtitle/comment is left aligned under title.
+- Hero cards intentionally untouched.
+
+Files checked:
+index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True
+blogs/index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True
+contact/index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True
+faqs/index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True
+packages/index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True
+services/index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True
+teams/index.html: duplicate IDs=none; empty buttons=0; title-tile-fix=True

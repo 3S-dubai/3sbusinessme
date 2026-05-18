@@ -1,0 +1,9 @@
+blogs/index.html: ids=5, duplicate_ids=none, empty_buttons=0
+contact/index.html: ids=4, duplicate_ids=none, empty_buttons=0
+faqs/index.html: ids=5, duplicate_ids=none, empty_buttons=0
+index.html: ids=7, duplicate_ids=none, empty_buttons=0
+packages/index.html: ids=8, duplicate_ids=none, empty_buttons=0
+services/index.html: ids=8, duplicate_ids=none, empty_buttons=0
+teams/index.html: ids=5, duplicate_ids=none, empty_buttons=0
+missing_internal_page_targets=none
+Contact final CTA fixed: 'Need a quick answer?' frame/grid/button wrapping corrected.
