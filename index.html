@@ -2275,9 +2275,9 @@ details summary{
 
 .logo-box img{
   filter:none !important;
-  height:52px !important;
-  max-height:52px !important;
-  max-width:220px !important;
+  height:64px !important;
+  max-height:64px !important;
+  max-width:255px !important;
 }
 
 .site-header{
@@ -2291,9 +2291,9 @@ details summary{
   }
 
   .logo-box img{
-    height:48px !important;
-    max-height:48px !important;
-    max-width:205px !important;
+    height:58px !important;
+    max-height:58px !important;
+    max-width:230px !important;
   }
 }
 
@@ -2304,9 +2304,9 @@ details summary{
   }
 
   .logo-box img{
-    height:42px !important;
-    max-height:42px !important;
-    max-width:175px !important;
+    height:50px !important;
+    max-height:50px !important;
+    max-width:205px !important;
   }
 }
 
@@ -3313,258 +3313,231 @@ footer{
 }
 
 
-/* FINAL REQUESTED POLISH - hero left, glossy hero, golden nav, FAQ title cleanup */
+/* FINAL HOME HERO TITLE GLOSS + NAV TEXT VISIBILITY */
 
-/* Desktop hero content slightly more left */
-@media(min-width: 992px){
-  .hero .container.hero-inner{
-    transform:translateX(-34px) !important;
-  }
-}
-
-/* Subtle glossy hero font without dulling readability */
-.hero h1{
-  background:linear-gradient(180deg, #ffffff 0%, #ffffff 38%, #edf4ff 68%, #ffffff 100%) !important;
-  -webkit-background-clip:text !important;
-  background-clip:text !important;
-  -webkit-text-fill-color:transparent !important;
-  color:#ffffff !important;
-  text-shadow:
-    0 3px 14px rgba(0,0,0,.42),
-    0 0 18px rgba(255,255,255,.08) !important;
-  filter:drop-shadow(0 4px 10px rgba(0,0,0,.22)) !important;
-}
-
-.hero h1 span{
-  background:linear-gradient(180deg, #fff0bd 0%, #d9b95b 54%, #fff4cf 100%) !important;
-  -webkit-background-clip:text !important;
-  background-clip:text !important;
-  -webkit-text-fill-color:transparent !important;
-  color:var(--gold-2) !important;
-  text-shadow:
-    0 3px 12px rgba(0,0,0,.35),
-    0 0 14px rgba(201,168,76,.16) !important;
-}
-
-.hero-lead{
-  color:rgba(255,255,255,.90) !important;
-  text-shadow:0 3px 14px rgba(0,0,0,.42) !important;
-}
-
-.badge{
-  color:#ffe7a2 !important;
-  border-color:rgba(201,168,76,.45) !important;
-  background:rgba(201,168,76,.12) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255,255,255,.14),
-    0 8px 22px rgba(0,0,0,.10) !important;
-}
-
-/* Sticky/frozen nav visibility over light or white backgrounds */
-.site-header .main-nav a{
-  color:rgba(244,214,139,.92) !important;
-  text-shadow:
-    0 2px 9px rgba(0,0,0,.46),
-    0 0 10px rgba(201,168,76,.08) !important;
-}
-
-.site-header .main-nav a:hover{
-  color:#ffffff !important;
-}
-
-.site-header .header-actions .btn,
-.site-header .topbar-cta{
-  background:rgba(201,168,76,.86) !important;
-  color:#061b38 !important;
-  border-color:rgba(255,255,255,.18) !important;
-  box-shadow:
-    0 10px 24px rgba(0,0,0,.16),
-    inset 0 1px 0 rgba(255,255,255,.24) !important;
-}
-
-.site-header .header-actions .btn:hover,
-.site-header .topbar-cta:hover{
-  background:var(--gold-2) !important;
-  color:#061b38 !important;
-}
-
-/* Remove earlier blue shade from FAQ title/parent card */
-#faq .section-dropdown > summary,
-section#faq .section-dropdown > summary{
-  background:
-    radial-gradient(circle at 95% 15%, rgba(201,168,76,.10), transparent 30%),
-    #ffffff !important;
-  color:var(--navy) !important;
-}
-
-#faq .section-dropdown,
-section#faq .section-dropdown{
-  background:#ffffff !important;
-  border-color:var(--line) !important;
-  box-shadow:0 14px 40px rgba(6,27,56,.07) !important;
-}
-
-#faq .section-dropdown > summary strong,
-section#faq .section-dropdown > summary strong{
-  color:var(--navy) !important;
-}
-
-#faq .section-dropdown > summary em,
-section#faq .section-dropdown > summary em{
-  color:var(--body) !important;
-}
-
-#faq .section-dropdown > summary small,
-section#faq .section-dropdown > summary small{
-  color:#9a7630 !important;
-}
-
-@media(max-width: 620px){
-  .hero .container.hero-inner{
-    transform:none !important;
-  }
-
-  .hero h1{
-    filter:drop-shadow(0 3px 8px rgba(0,0,0,.26)) !important;
-    text-shadow:
-      0 4px 16px rgba(0,0,0,.55),
-      0 0 10px rgba(255,255,255,.06) !important;
-  }
-}
-
-
-/* TRUE FINAL FORCE FIX - hero left + glossy text + nav gold + FAQ no blue */
-
-/* HERO: move content left on desktop */
-@media(min-width: 992px){
-  main .hero .hero-inner,
-  .hero .hero-inner,
-  .hero .container.hero-inner{
-    margin-left:max(24px, calc((100vw - 1120px) / 2 - 52px)) !important;
-    margin-right:auto !important;
-    transform:none !important;
-  }
-
-  .hero .hero-inner > div:first-child{
-    max-width:740px !important;
-  }
-}
-
-/* HERO TEXT: visible glossy treatment */
+/* Hero main title glossy effect */
 .hero h1,
-main .hero h1{
+.hero-card h1,
+.hero-card h2,
+.hero-visual-card h1,
+.hero-visual-card h2{
   color:#ffffff !important;
   background:linear-gradient(180deg,
     #ffffff 0%,
     #ffffff 24%,
-    #eef5ff 50%,
-    #ffffff 74%,
-    #d8e7f8 100%
+    #eef6ff 50%,
+    #ffffff 76%,
+    #dcecff 100%
   ) !important;
   -webkit-background-clip:text !important;
   background-clip:text !important;
   -webkit-text-fill-color:transparent !important;
   text-shadow:none !important;
   filter:
-    drop-shadow(0 4px 12px rgba(0,0,0,.38))
+    drop-shadow(0 2px 1px rgba(0,0,0,.30))
+    drop-shadow(0 5px 14px rgba(0,0,0,.38))
     drop-shadow(0 0 10px rgba(255,255,255,.08)) !important;
 }
 
+/* Gold words inside hero title, if any */
 .hero h1 span,
-main .hero h1 span{
+.hero-card h1 span,
+.hero-card h2 span,
+.hero-visual-card h1 span,
+.hero-visual-card h2 span{
   color:var(--gold-2) !important;
   background:linear-gradient(180deg,
-    #fff7d8 0%,
-    #f6d98c 36%,
-    #c9a84c 70%,
-    #fff1bd 100%
+    #fff7d6 0%,
+    #f5d98f 34%,
+    #c9a84c 68%,
+    #fff0bd 100%
   ) !important;
   -webkit-background-clip:text !important;
   background-clip:text !important;
   -webkit-text-fill-color:transparent !important;
-  filter:drop-shadow(0 3px 10px rgba(0,0,0,.30)) !important;
+  text-shadow:none !important;
+  filter:
+    drop-shadow(0 2px 1px rgba(0,0,0,.32))
+    drop-shadow(0 4px 12px rgba(0,0,0,.34))
+    drop-shadow(0 0 10px rgba(201,168,76,.16)) !important;
 }
 
-/* NAV: make all frozen nav links lightly gold */
-.site-header nav a,
+.hero-lead,
+.hero-card p,
+.hero-visual-card p{
+  color:rgba(255,255,255,.92) !important;
+  text-shadow:
+    0 1px 1px rgba(0,0,0,.50),
+    0 4px 14px rgba(0,0,0,.34) !important;
+}
+
+/* Desktop nav: gold text with black outline/shadow for visibility on any background */
 .site-header .main-nav a,
-header.site-header nav a,
-header.site-header .main-nav a{
+.site-header nav a{
   color:#f2d37b !important;
   opacity:1 !important;
   text-shadow:
-    0 2px 8px rgba(0,0,0,.55),
-    0 0 8px rgba(201,168,76,.12) !important;
+    0 1px 0 rgba(0,0,0,.88),
+    0 2px 4px rgba(0,0,0,.72),
+    0 0 8px rgba(0,0,0,.38) !important;
+  -webkit-text-stroke:.34px rgba(0,0,0,.68) !important;
+  paint-order:stroke fill !important;
 }
 
-.site-header nav a:hover,
-.site-header .main-nav a:hover{
+.site-header .main-nav a:hover,
+.site-header nav a:hover{
   color:#ffffff !important;
+  text-shadow:
+    0 1px 0 rgba(0,0,0,.88),
+    0 2px 5px rgba(0,0,0,.76),
+    0 0 10px rgba(201,168,76,.16) !important;
 }
 
+/* Header CTA/buttons visible on glass and white backgrounds */
 .site-header .btn,
 .site-header a.btn,
 .site-header .header-actions a,
 .site-header .topbar-cta{
-  color:#061b38 !important;
-  background:#d8b858 !important;
-  border-color:rgba(255,255,255,.18) !important;
-  box-shadow:0 10px 24px rgba(0,0,0,.16) !important;
+  text-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+  box-shadow:
+    0 1px 0 rgba(0,0,0,.28),
+    0 9px 24px rgba(0,0,0,.16) !important;
 }
 
-/* FAQ TITLE CARD: remove any blue/dark shade */
-#faq > .container > details.section-dropdown,
-section#faq > .container > details.section-dropdown,
-#faq details.section-dropdown{
+/* Mobile menu nav: same gold + black outline visibility */
+@media(max-width: 991px){
+  .site-header .mobile-menu,
+  .mobile-menu{
+    background:rgba(4,20,44,.82) !important;
+    border-top:1px solid rgba(201,168,76,.18) !important;
+    backdrop-filter:blur(16px) saturate(120%) !important;
+    -webkit-backdrop-filter:blur(16px) saturate(120%) !important;
+  }
+
+  .site-header .mobile-menu a,
+  .mobile-menu a{
+    color:#f2d37b !important;
+    opacity:1 !important;
+    text-shadow:
+      0 1px 0 rgba(0,0,0,.90),
+      0 2px 4px rgba(0,0,0,.72),
+      0 0 8px rgba(0,0,0,.36) !important;
+    -webkit-text-stroke:.34px rgba(0,0,0,.70) !important;
+    paint-order:stroke fill !important;
+    border-bottom-color:rgba(201,168,76,.14) !important;
+  }
+
+  .site-header .mobile-menu a:hover,
+  .mobile-menu a:hover{
+    color:#ffffff !important;
+  }
+
+  .css-menu-button,
+  .menu-button,
+  label[for="mobileToggle"]{
+    color:#f2d37b !important;
+    text-shadow:
+      0 1px 0 rgba(0,0,0,.90),
+      0 2px 5px rgba(0,0,0,.76) !important;
+    -webkit-text-stroke:.36px rgba(0,0,0,.72) !important;
+  }
+}
+
+/* Mobile hero readability with glossy title */
+@media(max-width:620px){
+  .hero h1,
+  .hero-card h1,
+  .hero-card h2,
+  .hero-visual-card h1,
+  .hero-visual-card h2{
+    filter:
+      drop-shadow(0 2px 1px rgba(0,0,0,.36))
+      drop-shadow(0 5px 14px rgba(0,0,0,.52))
+      drop-shadow(0 0 8px rgba(255,255,255,.06)) !important;
+  }
+
+  .hero-lead,
+  .hero-card p,
+  .hero-visual-card p{
+    color:rgba(255,255,255,.94) !important;
+    text-shadow:
+      0 1px 1px rgba(0,0,0,.62),
+      0 4px 16px rgba(0,0,0,.48) !important;
+  }
+}
+
+
+/* TRUE FINAL REMOVE BLUE SHADE FROM TITLE CARDS - MOBILE + DESKTOP */
+.section-dropdown,
+.section-light .section-dropdown,
+#faq .section-dropdown,
+section#faq .section-dropdown{
   background:#ffffff !important;
   border:1px solid rgba(6,27,56,.12) !important;
-  box-shadow:0 14px 40px rgba(6,27,56,.07) !important;
+  box-shadow:0 14px 34px rgba(6,27,56,.055) !important;
 }
 
-#faq details.section-dropdown > summary,
-section#faq details.section-dropdown > summary{
+.section-dropdown > summary,
+.section-light .section-dropdown > summary,
+#faq .section-dropdown > summary,
+section#faq .section-dropdown > summary{
   background:#ffffff !important;
-  color:#061b38 !important;
+  background-image:none !important;
+  color:var(--navy) !important;
   border:0 !important;
   box-shadow:none !important;
 }
 
-#faq details.section-dropdown > summary::before,
-#faq details.section-dropdown > summary::after,
-section#faq details.section-dropdown > summary::before,
-section#faq details.section-dropdown > summary::after{
-  background:rgba(201,168,76,.12) !important;
+.section-dropdown > summary::before,
+.section-dropdown > summary::after,
+#faq .section-dropdown > summary::before,
+#faq .section-dropdown > summary::after,
+section#faq .section-dropdown > summary::before,
+section#faq .section-dropdown > summary::after{
+  background:rgba(201,168,76,.13) !important;
+  color:#9a7630 !important;
+  box-shadow:none !important;
+}
+
+.section-dropdown[open] > summary,
+#faq .section-dropdown[open] > summary,
+section#faq .section-dropdown[open] > summary{
+  background:#ffffff !important;
+  background-image:none !important;
+}
+
+.section-dropdown > summary small,
+#faq .section-dropdown > summary small,
+section#faq .section-dropdown > summary small{
   color:#9a7630 !important;
 }
 
-#faq details.section-dropdown > summary small,
-#faq details.section-dropdown > summary strong,
-#faq details.section-dropdown > summary em,
-section#faq details.section-dropdown > summary small,
-section#faq details.section-dropdown > summary strong,
-section#faq details.section-dropdown > summary em{
-  color:inherit !important;
+.section-dropdown > summary strong,
+#faq .section-dropdown > summary strong,
+section#faq .section-dropdown > summary strong{
+  color:var(--navy) !important;
 }
 
-#faq details.section-dropdown > summary small{
+.section-dropdown > summary em,
+#faq .section-dropdown > summary em,
+section#faq .section-dropdown > summary em{
+  color:var(--body) !important;
+}
+
+/* specifically prevent dark/blue active icon on testimonials/FAQ title cards */
+.section-dropdown[open] > summary::after,
+#faq .section-dropdown[open] > summary::after,
+section#faq .section-dropdown[open] > summary::after{
+  background:rgba(201,168,76,.16) !important;
   color:#9a7630 !important;
 }
 
-#faq details.section-dropdown > summary strong{
-  color:#061b38 !important;
-}
-
-#faq details.section-dropdown > summary em{
-  color:#5F5F5F !important;
-}
-
-@media(max-width:620px){
-  .hero h1,
-  main .hero h1{
-    filter:
-      drop-shadow(0 4px 14px rgba(0,0,0,.50))
-      drop-shadow(0 0 8px rgba(255,255,255,.06)) !important;
-  }
+/* remove any accidental blue glow/shade from title-card containers */
+.section-dropdown::before,
+.section-dropdown::after{
+  background:none !important;
+  box-shadow:none !important;
 }
 
 </style>
@@ -3621,7 +3594,7 @@ section#faq details.section-dropdown > summary em{
     <div class="container hero-inner">
       <div>
         <div class="badge">3S Business Services</div>
-        <h1>Business Setup in Dubai and Across the UAE</h1>
+        <h1>Business Setup in <span>Dubai</span> and Across the <span>UAE</span></h1>
         <p class="hero-lead">Corporate support for UAE company formation, trade license assistance, mainland and free zone setup, visa processing, PRO services and corporate banking guidance.</p>
 
         <div class="hero-actions">
