@@ -7291,6 +7291,71 @@ body.blogs-page .blog-support-section .cta-card .label{
     font-size:30px !important;
   }
 }
+
+
+/* ================================
+   BLOGS FIRST TITLE + HERO ALIGNMENT FIX
+   Safe page-only correction: matches Home/Services/Packages hero text rhythm.
+   ================================ */
+body.blogs-page .blogs-hero{
+  padding:88px 0 84px !important;
+  display:flex !important;
+  align-items:center !important;
+}
+body.blogs-page .blogs-hero .hero-inner{
+  grid-template-columns:minmax(0,1.05fr) minmax(340px,420px) !important;
+  max-width:1180px !important;
+  min-height:auto !important;
+  gap:42px !important;
+  align-items:center !important;
+  align-content:center !important;
+}
+body.blogs-page .blogs-hero .hero-inner > div:first-child{
+  align-self:center !important;
+  transform:none !important;
+  max-width:720px !important;
+}
+body.blogs-page .blogs-hero h1{
+  max-width:780px !important;
+}
+body.blogs-page .blogs-hero .hero-lead{
+  max-width:640px !important;
+}
+
+/* First Blogs title only - reduce oversized title */
+body.blogs-page #latest-blogs .blog-title-card h2{
+  font-size:clamp(26px,2.6vw,34px) !important;
+  line-height:1.16 !important;
+  letter-spacing:-.025em !important;
+  font-weight:700 !important;
+}
+body.blogs-page #latest-blogs .blog-title-card p{
+  font-size:15px !important;
+  line-height:1.7 !important;
+}
+
+@media(max-width:960px){
+  body.blogs-page .blogs-hero .hero-inner{
+    grid-template-columns:1fr !important;
+    max-width:920px !important;
+  }
+}
+@media(max-width:620px){
+  body.blogs-page .blogs-hero{
+    min-height:100svh !important;
+    padding-top:84px !important;
+    padding-bottom:28px !important;
+  }
+  body.blogs-page .blogs-hero .hero-inner{
+    min-height:calc(100svh - 112px) !important;
+    align-content:center !important;
+  }
+  body.blogs-page #latest-blogs .blog-title-card h2{
+    font-size:26px !important;
+    line-height:1.18 !important;
+  }
+}
+
 </style>
 </head>
 <body class="blogs-page">
