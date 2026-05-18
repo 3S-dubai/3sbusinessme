@@ -7399,6 +7399,201 @@ body.packages-page .service-accordion > summary strong{
   }
 }
 
+
+
+/* ================================
+   TOTAL QA HARDENING - alignment, wrapping, buttons
+   Applied after Blogs page QA. Does not target hero-card content.
+   ================================ */
+html, body{
+  max-width:100% !important;
+  overflow-x:hidden !important;
+}
+
+main, section, .container, .section-head, .service-title-card, .team-title-card, .blog-title-card,
+.cta-card, .package-card, .blog-card, .team-card, .footer-grid-reworked, .footer-map-only{
+  min-width:0 !important;
+}
+
+.btn,
+a.btn,
+.main-nav a,
+.mobile-menu a,
+.footer a,
+.blog-card a,
+.package-card a,
+.team-card a,
+.call-float,
+.whatsapp-float{
+  pointer-events:auto !important;
+  cursor:pointer !important;
+}
+
+.section-head h2,
+.service-title-card h2,
+.team-title-card h2,
+.blog-title-card h2,
+.cta-card h2,
+.package-card h3,
+.blog-card h3,
+.team-card h3,
+.section-dropdown > summary strong,
+.service-accordion > summary strong{
+  max-width:100% !important;
+  min-width:0 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+  hyphens:auto !important;
+}
+
+.section-head p,
+.service-title-card p,
+.team-title-card p,
+.blog-title-card p,
+.cta-card p,
+.package-card p,
+.blog-card p,
+.team-card p,
+.section-dropdown > summary em,
+.service-accordion > summary em{
+  max-width:100% !important;
+  min-width:0 !important;
+  white-space:normal !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+}
+
+/* Packages title-frame alignment requested: title follows subtitle direction, not center drift */
+body.packages-page .packages-overview-section .service-title-card,
+body.packages-page .packages-overview-section .service-title-card .label,
+body.packages-page .packages-overview-section .service-title-card h2,
+body.packages-page .packages-overview-section .service-title-card p{
+  text-align:left !important;
+}
+body.packages-page .packages-overview-section .service-title-card{
+  margin-left:0 !important;
+  margin-right:auto !important;
+  justify-items:start !important;
+  align-items:start !important;
+}
+
+/* Safe section dropdown/title frames so long text never gets cropped on mobile */
+body.packages-page .section-dropdown > summary,
+body.packages-page .service-accordion > summary{
+  overflow:visible !important;
+  align-items:flex-start !important;
+}
+body.packages-page .section-dropdown > summary span,
+body.packages-page .service-accordion > summary span{
+  min-width:0 !important;
+  width:100% !important;
+  text-align:left !important;
+}
+body.packages-page .section-dropdown > summary strong,
+body.packages-page .section-dropdown > summary em,
+body.packages-page .service-accordion > summary strong,
+body.packages-page .service-accordion > summary em{
+  text-align:left !important;
+}
+
+/* Final CTA cards: same robust frame behavior across Packages, Teams, Blogs and FAQ */
+.service-final-cta .cta-card,
+.team-support-section .cta-card,
+.blog-support-section .cta-card,
+#faq-support .cta-card{
+  overflow:hidden !important;
+  grid-template-columns:minmax(0,1fr) auto !important;
+}
+.service-final-cta .cta-card > div,
+.team-support-section .cta-card > div,
+.blog-support-section .cta-card > div,
+#faq-support .cta-card > div{
+  min-width:0 !important;
+}
+
+/* Blog page QA: consistent card rhythm and safe wrapping */
+body.blogs-page .blog-card-grid{
+  align-items:stretch !important;
+}
+body.blogs-page .blog-card{
+  min-width:0 !important;
+  height:100% !important;
+}
+body.blogs-page .blog-card a{
+  margin-top:auto !important;
+}
+body.blogs-page .blog-title-card h2{
+  font-size:clamp(28px,3.4vw,42px) !important;
+}
+
+@media(max-width:960px){
+  .service-final-cta .cta-card,
+  .team-support-section .cta-card,
+  .blog-support-section .cta-card,
+  #faq-support .cta-card{
+    grid-template-columns:1fr !important;
+  }
+}
+
+@media(max-width:620px){
+  .section-head,
+  .service-title-card,
+  .team-title-card,
+  .blog-title-card{
+    width:100% !important;
+    max-width:100% !important;
+  }
+
+  .section-head h2,
+  .service-title-card h2,
+  .team-title-card h2,
+  .blog-title-card h2,
+  .cta-card h2{
+    font-size:clamp(24px,7vw,32px) !important;
+    line-height:1.13 !important;
+    letter-spacing:-.035em !important;
+  }
+
+  body.packages-page .section-dropdown > summary,
+  body.packages-page .service-accordion > summary{
+    display:grid !important;
+    grid-template-columns:minmax(0,1fr) 32px !important;
+    gap:14px !important;
+    align-items:flex-start !important;
+  }
+
+  body.packages-page .section-dropdown > summary::after,
+  body.packages-page .service-accordion > summary::after{
+    justify-self:end !important;
+  }
+
+  .service-final-cta .cta-card,
+  .team-support-section .cta-card,
+  .blog-support-section .cta-card,
+  #faq-support .cta-card{
+    text-align:left !important;
+    padding:26px !important;
+    border-radius:24px !important;
+  }
+
+  .service-final-cta .cta-card .btn,
+  .team-support-section .cta-card .btn,
+  .blog-support-section .cta-card .btn,
+  #faq-support .cta-card .btn{
+    width:100% !important;
+  }
+
+  body.blogs-page .blog-title-card{
+    text-align:center !important;
+  }
+
+  body.blogs-page .blog-card h3{
+    font-size:18px !important;
+    line-height:1.22 !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
@@ -7445,38 +7640,34 @@ body.packages-page .service-accordion > summary strong{
 </div>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="logo" href="../" aria-label="3S Business Services Home">
-      <span class="logo-box">
-        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
-      </span>
-    </a>
-
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="../">Home</a>
-      <a href="../services/">Services</a>
-      <a href="./">Packages</a>
-      <a href="../faqs/">FAQs</a>
-      <a href="../teams/">Teams</a>
-      <a href="https://3sbusinessme.com/blogs/">Blogs</a>
-      <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-    </nav>
-    <label class="css-menu-button" for="mobileToggle" aria-label="Open menu">☰</label>
-  </div>
-
-  <input class="mobile-toggle-checkbox" type="checkbox" id="mobileToggle">
-
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="../">Home</a>
-    <a href="../services/">Services</a>
-    <a href="./">Packages</a>
-    <a href="../faqs/">FAQs</a>
-    <a href="../teams/">Teams</a>
-    <a href="https://3sbusinessme.com/blogs/">Blogs</a>
-    <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
-  </div>
+<div class="container header-inner">
+<a aria-label="3S Business Services Home" class="logo" href="../">
+<span class="logo-box">
+<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
+</span>
+</a>
+<nav aria-label="Main navigation" class="main-nav">
+<a href="../">Home</a>
+<a href="../services/">Services</a>
+<a href="../packages/">Packages</a>
+<a href="../faqs/">FAQs</a>
+<a href="../teams/">Teams</a>
+<a href="../blogs/">Blogs</a>
+<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+</nav>
+<label aria-label="Open menu" class="css-menu-button" for="mobileToggle">☰</label>
+</div>
+<input class="mobile-toggle-checkbox" id="mobileToggle" type="checkbox"/>
+<div class="mobile-menu" id="mobileMenu">
+<a href="../">Home</a>
+<a href="../services/">Services</a>
+<a href="../packages/">Packages</a>
+<a href="../faqs/">FAQs</a>
+<a href="../teams/">Teams</a>
+<a href="../blogs/">Blogs</a>
+<a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
+</div>
 </header>
-
 <main id="main">
 <section aria-label="3S corporate setup packages hero" class="hero packages-hero services-hero">
 <div class="container hero-inner">
@@ -7491,7 +7682,6 @@ body.packages-page .service-accordion > summary strong{
 </div>
 </div>
 </section>
-
 <section class="section service-page-band packages-overview-section" id="packages">
 <div class="container">
 <div class="section-head center service-title-card">
@@ -7514,7 +7704,6 @@ body.packages-page .service-accordion > summary strong{
 </ul>
 <a class="btn btn-dark" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20to%20choose%20the%20Starter%20Package." rel="noopener" target="_blank">Choose Starter</a>
 </article>
-
 <article class="package-card package-featured">
 <div class="popular-badge">Most Popular</div>
 <div class="package-top">
@@ -7530,7 +7719,6 @@ body.packages-page .service-accordion > summary strong{
 </ul>
 <a class="btn btn-gold" href="https://wa.me/97143955747?text=Hi%203S%2C%20I%20want%20to%20discuss%20the%20Business%20Package." rel="noopener" target="_blank">Choose Business</a>
 </article>
-
 <article class="package-card">
 <div class="package-top">
 <span class="package-label">Premium Package</span>
@@ -7548,7 +7736,6 @@ body.packages-page .service-accordion > summary strong{
 </div>
 </div>
 </section>
-
 <section class="section service-page-band" id="cost-factors">
 <div class="container">
 <details class="section-dropdown service-accordion">
@@ -7570,7 +7757,6 @@ body.packages-page .service-accordion > summary strong{
 </details>
 </div>
 </section>
-
 <section class="section service-page-band" id="included">
 <div class="container">
 <details class="section-dropdown service-accordion">
@@ -7594,7 +7780,6 @@ body.packages-page .service-accordion > summary strong{
 </details>
 </div>
 </section>
-
 <section class="section service-page-band" id="quote">
 <div class="container">
 <details class="section-dropdown service-accordion">
@@ -7614,7 +7799,6 @@ body.packages-page .service-accordion > summary strong{
 </details>
 </div>
 </section>
-
 <section class="section service-page-band" id="faq">
 <div class="container">
 <details class="section-dropdown service-accordion">
@@ -7642,7 +7826,6 @@ body.packages-page .service-accordion > summary strong{
 </details>
 </div>
 </section>
-
 <section class="section service-page-band service-final-cta">
 <div class="container">
 <div class="cta-card">
@@ -7656,68 +7839,57 @@ body.packages-page .service-accordion > summary strong{
 </div>
 </section>
 </main>
-
 <footer class="footer">
-  <div class="container footer-grid footer-grid-reworked">
-    <div class="footer-col footer-brand-services">
-      <a class="footer-logo" href="../" aria-label="3S Business Services Home">
-        <img src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png" alt="3S Business Services Logo">
-      </a>
-      <p>Business setup and corporate support services in Dubai and across the UAE.</p>
-
-      <div class="footer-block footer-services-block">
-        <h4>Services</h4>
-        <ul>
-          <li><a href="../services/">All Services</a></li>
-          <li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
-          <li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
-          <li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-col footer-company-contact">
-      <div class="footer-block">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="./">Packages</a></li>
-          <li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
-          <li><a href="../faqs/">FAQs</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-block footer-contact-block">
-        <h4>Contact</h4>
-        <ul>
-          <li><a href="tel:+97143955747">+971 4 395 5747</a></li>
-          <li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
-          <li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-col footer-map-only">
-      <div class="footer-map-card" aria-label="Office location map preview">
-        <iframe
-          class="footer-map-frame"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
-        </iframe>
-        <div class="footer-map-content">
-          <strong>Office Location</strong>
-          <span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
-          <a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" target="_blank" rel="noopener">Open Google Map</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container footer-bottom">
-    <p>© 2026 3S Business Services. All rights reserved.</p>
-    <p>3S Business Services is a private business consultancy based in Dubai.</p>
-  </div>
+<div class="container footer-grid footer-grid-reworked">
+<div class="footer-col footer-brand-services">
+<a aria-label="3S Business Services Home" class="footer-logo" href="../">
+<img alt="3S Business Services Logo" src="https://3sbusinessme.com/wp-content/uploads/2024/05/Untitled-design-91-e1769077545447.png"/>
+</a>
+<p>Business setup and corporate support services in Dubai and across the UAE.</p>
+<div class="footer-block footer-services-block">
+<h4>Services</h4>
+<ul>
+<li><a href="../services/">All Services</a></li>
+<li><a href="https://3sbusinessme.com/trade-license-setup/">Trade License Setup</a></li>
+<li><a href="https://3sbusinessme.com/visa-emirates-id-services/">Visa &amp; Emirates ID</a></li>
+<li><a href="https://3sbusinessme.com/bank-account-opening/">Bank Account Guidance</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col footer-company-contact">
+<div class="footer-block">
+<h4>Company</h4>
+<ul>
+<li><a href="../packages/">Packages</a></li>
+<li><a href="../blogs/">Blogs</a></li>
+<li><a href="../faqs/">FAQs</a></li>
+</ul>
+</div>
+<div class="footer-block footer-contact-block">
+<h4>Contact</h4>
+<ul>
+<li><a href="tel:+97143955747">+971 4 395 5747</a></li>
+<li><a href="mailto:inquiry@3sgroupme.com">inquiry@3sgroupme.com</a></li>
+<li>21st Floor, Sheikh Rashid Tower, DWTC, Dubai, UAE</li>
+</ul>
+</div>
+</div>
+<div class="footer-col footer-map-only">
+<div aria-label="Office location map preview" class="footer-map-card">
+<iframe allowfullscreen="" class="footer-map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=3S%20Business%20Services%2021st%20Floor%20Sheikh%20Rashid%20Tower%20Dubai%20World%20Trade%20Centre%20Dubai%20UAE&amp;output=embed">
+</iframe>
+<div class="footer-map-content">
+<strong>Office Location</strong>
+<span>21st Floor, Sheikh Rashid Tower, Dubai World Trade Centre, Dubai, UAE.</span>
+<a class="footer-map-link" href="https://share.google/frR8OkE4oLfWzTH5V" rel="noopener" target="_blank">Open Google Map</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container footer-bottom">
+<p>© 2026 3S Business Services. All rights reserved.</p>
+<p>3S Business Services is a private business consultancy based in Dubai.</p>
+</div>
 </footer>
 <script>
 document.querySelectorAll(".mobile-menu a").forEach(link => {
