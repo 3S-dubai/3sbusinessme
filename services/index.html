@@ -5999,6 +5999,143 @@ body.services-page .section-dropdown > summary em{
   }
 }
 
+
+/* FINAL BRIGHT WHITE SHADED GLASS NAV */
+.site-header{
+  background:linear-gradient(180deg, rgba(255,255,255,.86), rgba(255,255,255,.68)) !important;
+  border-bottom:1px solid rgba(201,168,76,.22) !important;
+  box-shadow:0 14px 42px rgba(6,27,56,.10) !important;
+  backdrop-filter:blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(145%) !important;
+}
+
+.main-nav,
+.main-nav a{
+  color:var(--navy) !important;
+  text-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+}
+
+.main-nav a:hover{
+  color:#9a7630 !important;
+}
+
+.header-actions .btn-outline,
+.site-header .btn-outline{
+  color:var(--navy) !important;
+  border-color:rgba(6,27,56,.22) !important;
+  background:rgba(255,255,255,.54) !important;
+  text-shadow:none !important;
+}
+
+.css-menu-button,
+.menu-button,
+label[for="mobileToggle"]{
+  color:var(--navy) !important;
+  text-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+}
+
+.logo-box,
+.logo-box img{
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+.mobile-menu{
+  background:rgba(255,255,255,.92) !important;
+  border-top:1px solid rgba(201,168,76,.22) !important;
+  backdrop-filter:blur(18px) saturate(145%) !important;
+  -webkit-backdrop-filter:blur(18px) saturate(145%) !important;
+}
+
+.mobile-menu a{
+  color:var(--navy) !important;
+  text-shadow:none !important;
+  -webkit-text-stroke:0 !important;
+  border-bottom-color:rgba(6,27,56,.10) !important;
+}
+
+.mobile-menu a:hover{
+  color:#9a7630 !important;
+}
+
+@media(max-width:991px){
+  .site-header .mobile-menu,
+  .mobile-menu{
+    background:rgba(255,255,255,.94) !important;
+  }
+
+  .site-header .mobile-menu a,
+  .mobile-menu a{
+    color:var(--navy) !important;
+    text-shadow:none !important;
+    -webkit-text-stroke:0 !important;
+  }
+}
+
+
+/* FINAL STANDARD TITLE CARD FONT SIZE */
+.section h2,
+.logo-strip .jurisdiction-title h2,
+.service-title-card h2{
+  font-size:clamp(26px,2.6vw,34px) !important;
+  line-height:1.14 !important;
+  letter-spacing:-.032em !important;
+}
+
+.section-dropdown > summary strong,
+.service-accordion > summary strong{
+  font-size:clamp(20px,2vw,26px) !important;
+  line-height:1.18 !important;
+  letter-spacing:-.026em !important;
+}
+
+.service-title-card p,
+.section-head p,
+.section-dropdown > summary em,
+.service-accordion > summary em{
+  font-size:14px !important;
+  line-height:1.66 !important;
+}
+
+.cta h2,
+.cta-card h2{
+  font-size:clamp(26px,2.4vw,34px) !important;
+  line-height:1.14 !important;
+  letter-spacing:-.032em !important;
+}
+
+@media(max-width:620px){
+  .section h2,
+  .logo-strip .jurisdiction-title h2,
+  .service-title-card h2{
+    font-size:clamp(23px,6vw,28px) !important;
+    line-height:1.16 !important;
+    letter-spacing:-.026em !important;
+  }
+
+  .section-dropdown > summary strong,
+  .service-accordion > summary strong{
+    font-size:19px !important;
+    line-height:1.18 !important;
+  }
+
+  .service-title-card p,
+  .section-head p,
+  .section-dropdown > summary em,
+  .service-accordion > summary em{
+    font-size:13.5px !important;
+    line-height:1.62 !important;
+  }
+
+  .cta h2,
+  .cta-card h2{
+    font-size:24px !important;
+    line-height:1.16 !important;
+  }
+}
+
 </style>
 </head>
 <body class="services-page">
