@@ -6457,6 +6457,107 @@ label[for="mobileToggle"]{
   color:#9a7630 !important;
 }
 
+
+
+/* FINAL OVERRIDE - DESKTOP LOGO LEFT + NAV RIGHT + CLEAN NAV + HERO BALANCE */
+@media(min-width:992px){
+  .site-header > .container,
+  .site-header .header-inner{
+    width:calc(100% - 48px) !important;
+    max-width:none !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+
+  .header-inner{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:24px !important;
+  }
+
+  .logo{
+    order:1 !important;
+    flex:0 0 auto !important;
+    margin-left:0 !important;
+    margin-right:auto !important;
+    justify-content:flex-start !important;
+    justify-self:flex-start !important;
+  }
+
+  .header-actions{
+    order:2 !important;
+    flex:0 0 auto !important;
+    margin-left:auto !important;
+    margin-right:16px !important;
+  }
+
+  .main-nav{
+    order:3 !important;
+    flex:0 1 auto !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+    justify-content:flex-end !important;
+    justify-self:flex-end !important;
+    text-align:right !important;
+  }
+
+  .logo-box img,
+  .logo img{
+    height:74px !important;
+    max-height:74px !important;
+    max-width:286px !important;
+  }
+}
+
+/* Force remove any leftover shadows/outlines from nav text and nav buttons */
+.site-header .main-nav,
+.site-header .main-nav *,
+.site-header .header-actions,
+.site-header .header-actions *,
+.site-header .mobile-menu,
+.site-header .mobile-menu *,
+.site-header .css-menu-button,
+.site-header .menu-button,
+.site-header label[for="mobileToggle"],
+.site-header a,
+.site-header button,
+.site-header .btn,
+.site-header .btn-outline,
+.site-header .btn-gold,
+.main-nav a,
+.mobile-menu a{
+  text-shadow:none !important;
+  box-shadow:none !important;
+  filter:none !important;
+  -webkit-text-stroke:0 !important;
+  paint-order:normal !important;
+}
+
+/* Keep only the header glass shadow, not button/text shadows */
+.site-header{
+  box-shadow:0 12px 34px rgba(6,27,56,.08) !important;
+}
+
+/* Move hero content slightly lower now that the nav is more visible */
+.hero .hero-inner{
+  transform:translateY(34px) !important;
+}
+
+@media(max-width:991px){
+  .hero .hero-inner{
+    transform:translateY(22px) !important;
+  }
+}
+
+@media(max-width:620px){
+  .hero .hero-inner{
+    transform:translateY(14px) !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
