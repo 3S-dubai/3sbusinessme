@@ -4894,6 +4894,58 @@ body.packages-page .service-accordion > summary em{
   }
 }
 
+
+
+/* ================================
+   FINAL TITLE SIZE REFINEMENT
+   Reduce bold section/card titles across pages,
+   excluding hero and hero cards.
+   ================================ */
+main .section h2,
+.logo-strip .jurisdiction-title h2{
+  font-size:clamp(27px,3.45vw,44px) !important;
+  line-height:1.1 !important;
+}
+main .section-head h2{
+  font-size:clamp(27px,3.45vw,44px) !important;
+}
+main .section-dropdown > summary strong{
+  font-size:clamp(22px,2.65vw,34px) !important;
+  line-height:1.12 !important;
+}
+main .card h3,
+main .action-card h3,
+main .testimonial-flow-card h3{
+  font-size:19px !important;
+  line-height:1.18 !important;
+  letter-spacing:-.025em !important;
+}
+main details summary,
+section#faq .dropdown-list summary{
+  font-size:15px !important;
+  line-height:1.3 !important;
+}
+.footer h3,
+.footer h4{
+  font-size:15px !important;
+  line-height:1.25 !important;
+}
+@media(max-width:620px){
+  main .section h2,
+  main .section-head h2,
+  .logo-strip .jurisdiction-title h2{
+    font-size:clamp(25px,8vw,36px) !important;
+  }
+  main .section-dropdown > summary strong{
+    font-size:22px !important;
+  }
+  main .card h3,
+  main .action-card h3,
+  main .testimonial-flow-card h3{
+    font-size:18px !important;
+  }
+}
+
 </style>
 </head>
 
@@ -4922,7 +4974,7 @@ body.packages-page .service-accordion > summary em{
       <a href="./">Home</a>
       <a href="services/">Services</a>
       <a href="packages/">Packages</a>
-      <a href="https://3sbusinessme.com/faqs/">FAQs</a>
+      <a href="faqs/">FAQs</a>
       <a href="https://3sbusinessme.com/teams/">Teams</a>
       <a href="https://3sbusinessme.com/blogs/">Blogs</a>
       <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
@@ -4936,7 +4988,7 @@ body.packages-page .service-accordion > summary em{
     <a href="./">Home</a>
     <a href="services/">Services</a>
     <a href="packages/">Packages</a>
-    <a href="https://3sbusinessme.com/faqs/">FAQs</a>
+    <a href="faqs/">FAQs</a>
     <a href="https://3sbusinessme.com/teams/">Teams</a>
     <a href="https://3sbusinessme.com/blogs/">Blogs</a>
     <a href="https://3sbusinessme.com/contact-us/">Contact Us</a>
@@ -5252,7 +5304,7 @@ body.packages-page .service-accordion > summary em{
         <ul>
           <li><a href="packages/">Packages</a></li>
           <li><a href="https://3sbusinessme.com/blogs/">Blogs</a></li>
-          <li><a href="https://3sbusinessme.com/faqs/">FAQs</a></li>
+          <li><a href="faqs/">FAQs</a></li>
         </ul>
       </div>
 
