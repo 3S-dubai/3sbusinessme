@@ -7326,6 +7326,79 @@ section#faq .dropdown-list summary{
   }
 }
 
+
+
+/* FINAL QA FIX - Packages title alignment must stay LEFT like subtitles */
+body.packages-page .packages-overview-section .service-title-card,
+body.packages-page .section-dropdown > summary,
+body.packages-page .service-accordion > summary{
+  text-align:left !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card .label,
+body.packages-page .packages-overview-section .service-title-card h2,
+body.packages-page .packages-overview-section .service-title-card p{
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:auto !important;
+  justify-self:start !important;
+}
+
+body.packages-page .packages-overview-section .service-title-card{
+  margin-left:0 !important;
+  margin-right:auto !important;
+}
+
+body.packages-page .section-dropdown > summary span,
+body.packages-page .service-accordion > summary span{
+  display:grid !important;
+  justify-items:start !important;
+  align-items:start !important;
+  text-align:left !important;
+  min-width:0 !important;
+  max-width:100% !important;
+}
+
+body.packages-page .section-dropdown > summary small,
+body.packages-page .section-dropdown > summary strong,
+body.packages-page .section-dropdown > summary em,
+body.packages-page .service-accordion > summary small,
+body.packages-page .service-accordion > summary strong,
+body.packages-page .service-accordion > summary em{
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  text-align:left !important;
+  margin-left:0 !important;
+  margin-right:auto !important;
+  justify-self:start !important;
+  overflow-wrap:break-word !important;
+  word-break:normal !important;
+}
+
+body.packages-page .section-dropdown > summary strong,
+body.packages-page .service-accordion > summary strong{
+  padding-left:0 !important;
+  transform:none !important;
+}
+
+@media(max-width:620px){
+  body.packages-page .packages-overview-section .service-title-card{
+    margin-left:0 !important;
+    margin-right:0 !important;
+    text-align:left !important;
+  }
+
+  body.packages-page .packages-overview-section .service-title-card .label,
+  body.packages-page .packages-overview-section .service-title-card h2,
+  body.packages-page .packages-overview-section .service-title-card p,
+  body.packages-page .section-dropdown > summary small,
+  body.packages-page .section-dropdown > summary strong,
+  body.packages-page .section-dropdown > summary em{
+    text-align:left !important;
+  }
+}
+
 </style>
 <script type="application/ld+json">
 {
