@@ -22,7 +22,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -2832,6 +2832,420 @@ body{
   .hero{
     padding-top:112px !important;
     min-height:620px !important;
+  }
+}
+
+
+/* TRUE FINAL CAR-SITE FONT SYSTEM */
+:root{
+  --font-main:'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  --font-heading:'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+}
+
+body,
+button,
+input,
+select,
+textarea{
+  font-family:var(--font-main) !important;
+  letter-spacing:-.012em !important;
+}
+
+h1,h2,h3,h4,
+.main-nav,
+.mobile-menu a,
+.btn,
+.badge,
+.label,
+details summary,
+.section-dropdown > summary strong{
+  font-family:var(--font-heading) !important;
+}
+
+.hero h1{
+  font-size:clamp(40px,4.4vw,58px) !important;
+  line-height:1.05 !important;
+  letter-spacing:-.055em !important;
+  font-weight:900 !important;
+  max-width:740px !important;
+}
+
+.hero-lead{
+  font-size:16px !important;
+  line-height:1.68 !important;
+  font-weight:500 !important;
+  letter-spacing:-.015em !important;
+  max-width:640px !important;
+}
+
+.badge{
+  font-size:10.5px !important;
+  font-weight:800 !important;
+  letter-spacing:.12em !important;
+}
+
+.btn{
+  font-size:13.5px !important;
+  font-weight:800 !important;
+  letter-spacing:-.005em !important;
+}
+
+.main-nav a{
+  font-size:13.5px !important;
+  font-weight:700 !important;
+  letter-spacing:-.01em !important;
+}
+
+.logo-strip .jurisdiction-title h2,
+.section h2{
+  font-size:clamp(30px,3vw,42px) !important;
+  line-height:1.12 !important;
+  letter-spacing:-.045em !important;
+  font-weight:900 !important;
+}
+
+.logo-strip .jurisdiction-title p,
+.section-head p{
+  font-size:15px !important;
+  line-height:1.7 !important;
+  font-weight:500 !important;
+}
+
+.label{
+  font-size:10.5px !important;
+  font-weight:850 !important;
+  letter-spacing:.14em !important;
+}
+
+.section-dropdown > summary strong{
+  font-size:clamp(22px,2.35vw,30px) !important;
+  line-height:1.15 !important;
+  letter-spacing:-.04em !important;
+  font-weight:900 !important;
+}
+
+.section-dropdown > summary em{
+  font-size:14px !important;
+  line-height:1.58 !important;
+  font-weight:500 !important;
+  letter-spacing:-.01em !important;
+}
+
+details summary{
+  font-size:14px !important;
+  line-height:1.35 !important;
+  font-weight:800 !important;
+  letter-spacing:-.012em !important;
+}
+
+.detail-body{
+  font-size:13.5px !important;
+  line-height:1.7 !important;
+  font-weight:500 !important;
+  letter-spacing:-.008em !important;
+}
+
+.testimonial-flow-card h3{
+  font-size:19px !important;
+  line-height:1.18 !important;
+  font-weight:900 !important;
+  letter-spacing:-.035em !important;
+}
+
+.testimonial-flow-card p{
+  font-size:13.5px !important;
+  line-height:1.7 !important;
+  font-weight:500 !important;
+}
+
+.testimonial-flow-card strong{
+  font-size:13px !important;
+  font-weight:800 !important;
+}
+
+.cta h2{
+  font-size:clamp(29px,2.8vw,40px) !important;
+  line-height:1.12 !important;
+  letter-spacing:-.045em !important;
+  font-weight:900 !important;
+}
+
+.cta p{
+  font-size:15px !important;
+  line-height:1.7 !important;
+  font-weight:500 !important;
+}
+
+footer{
+  font-size:13px !important;
+  line-height:1.7 !important;
+  font-weight:500 !important;
+}
+
+@media(max-width:991px){
+  .hero h1{
+    font-size:clamp(36px,6vw,48px) !important;
+    line-height:1.06 !important;
+  }
+
+  .hero-lead{
+    font-size:15px !important;
+  }
+
+  .logo-strip .jurisdiction-title h2,
+  .section h2{
+    font-size:clamp(27px,4.4vw,36px) !important;
+  }
+
+  .section-dropdown > summary strong{
+    font-size:clamp(21px,3.7vw,28px) !important;
+  }
+}
+
+@media(max-width:620px){
+  body{
+    font-size:14.5px !important;
+    line-height:1.62 !important;
+  }
+
+  .hero h1{
+    font-size:clamp(31px,8.6vw,38px) !important;
+    line-height:1.08 !important;
+    letter-spacing:-.04em !important;
+  }
+
+  .hero-lead{
+    font-size:14px !important;
+    line-height:1.62 !important;
+  }
+
+  .badge{
+    font-size:9.5px !important;
+  }
+
+  .hero-actions .btn{
+    font-size:13.5px !important;
+    min-height:48px !important;
+  }
+
+  .logo-strip .jurisdiction-title h2,
+  .section h2{
+    font-size:clamp(24px,6.8vw,30px) !important;
+    line-height:1.14 !important;
+  }
+
+  .logo-strip .jurisdiction-title p,
+  .section-head p{
+    font-size:14px !important;
+    line-height:1.65 !important;
+  }
+
+  .section-dropdown > summary strong{
+    font-size:20.5px !important;
+    line-height:1.16 !important;
+  }
+
+  .section-dropdown > summary em{
+    font-size:13px !important;
+    line-height:1.55 !important;
+  }
+
+  details summary{
+    font-size:13.5px !important;
+  }
+
+  .detail-body{
+    font-size:13px !important;
+    line-height:1.68 !important;
+  }
+
+  .testimonial-flow-card h3{
+    font-size:18px !important;
+  }
+
+  .testimonial-flow-card p{
+    font-size:13px !important;
+  }
+
+  .cta h2{
+    font-size:25px !important;
+  }
+
+  .cta p{
+    font-size:14px !important;
+  }
+
+  footer{
+    font-size:12.5px !important;
+  }
+}
+
+
+/* TRUE FINAL FOOTER LOGO - no shade behind bottom logo */
+.footer-logo::before,
+.footer-logo::after{
+  display:none !important;
+  content:none !important;
+  background:none !important;
+  filter:none !important;
+  opacity:0 !important;
+}
+
+.footer-logo{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+}
+
+.footer-logo img{
+  background:transparent !important;
+  filter:drop-shadow(0 3px 8px rgba(0,0,0,.22)) !important;
+}
+
+
+
+/* TRUE FINAL HERO TEXT CLARITY + SMOOTH IMAGE SYNC */
+.hero h1{
+  color:#ffffff !important;
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  -webkit-text-fill-color:#ffffff !important;
+  filter:none !important;
+  text-shadow:
+    0 3px 14px rgba(0,0,0,.58),
+    0 1px 0 rgba(255,255,255,.08) !important;
+}
+
+.hero h1 span{
+  color:var(--gold-2) !important;
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  -webkit-text-fill-color:var(--gold-2) !important;
+  text-shadow:
+    0 3px 14px rgba(0,0,0,.56),
+    0 0 14px rgba(201,168,76,.18) !important;
+}
+
+.hero-lead{
+  color:rgba(255,255,255,.92) !important;
+  text-shadow:0 3px 14px rgba(0,0,0,.54) !important;
+}
+
+.badge{
+  background:rgba(255,255,255,.08) !important;
+  border-color:rgba(255,255,255,.14) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.12),
+    0 8px 20px rgba(0,0,0,.10) !important;
+}
+
+/* Smooth hero image blend - no sharp white/image border feel */
+.hero{
+  overflow:hidden !important;
+}
+
+.hero::after{
+  background:
+    radial-gradient(ellipse at 76% 50%, rgba(3,16,36,0) 0%, rgba(3,16,36,.05) 42%, rgba(3,16,36,.16) 100%),
+    linear-gradient(90deg,
+      rgba(3,16,36,.60) 0%,
+      rgba(3,16,36,.44) 34%,
+      rgba(3,16,36,.20) 62%,
+      rgba(3,16,36,.04) 100%
+    ),
+    linear-gradient(180deg,
+      rgba(3,16,36,.08) 0%,
+      rgba(3,16,36,.02) 48%,
+      rgba(3,16,36,.18) 100%
+    ) !important;
+}
+
+.hero::before{
+  display:none !important;
+  content:none !important;
+  background:none !important;
+}
+
+/* remove any harsh hero card/image borders if an old card style appears */
+.hero-card,
+.hero-visual-card{
+  border:0 !important;
+  box-shadow:none !important;
+  background-color:transparent !important;
+}
+
+.hero-visual-card::before{
+  display:none !important;
+}
+
+@media(max-width:620px){
+  .hero h1{
+    text-shadow:
+      0 4px 18px rgba(0,0,0,.72),
+      0 1px 0 rgba(255,255,255,.06) !important;
+  }
+
+  .hero h1 span{
+    text-shadow:
+      0 4px 18px rgba(0,0,0,.70),
+      0 0 12px rgba(201,168,76,.16) !important;
+  }
+
+  .hero-lead{
+    color:rgba(255,255,255,.94) !important;
+    text-shadow:0 4px 18px rgba(0,0,0,.68) !important;
+  }
+
+  .hero::after{
+    background:
+      linear-gradient(180deg,
+        rgba(3,16,36,.42) 0%,
+        rgba(3,16,36,.30) 38%,
+        rgba(3,16,36,.48) 100%
+      ),
+      linear-gradient(90deg,
+        rgba(3,16,36,.68) 0%,
+        rgba(3,16,36,.50) 52%,
+        rgba(3,16,36,.18) 100%
+      ) !important;
+  }
+}
+
+
+/* TRUE FINAL HERO IMAGE CROP RESTORE - rich side visible */
+.hero{
+  background-position:center center !important;
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+}
+
+@media(max-width:991px){
+  .hero{
+    background-position:62% center !important;
+  }
+}
+
+@media(max-width:620px){
+  .hero{
+    background-position:72% center !important;
+    background-size:cover !important;
+  }
+
+  .hero::after{
+    background:
+      linear-gradient(180deg,
+        rgba(3,16,36,.42) 0%,
+        rgba(3,16,36,.30) 38%,
+        rgba(3,16,36,.48) 100%
+      ),
+      linear-gradient(90deg,
+        rgba(3,16,36,.66) 0%,
+        rgba(3,16,36,.48) 52%,
+        rgba(3,16,36,.16) 100%
+      ) !important;
   }
 }
 
