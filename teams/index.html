@@ -7102,6 +7102,68 @@ body.teams-page .teams-hero .hero-visual-card{
   }
 }
 
+
+
+/* TEAMS HERO DESKTOP FIT FIX - Teams only
+   Keeps boardroom background, removes oversized desktop hero feel,
+   and aligns the hero text block with the first pages. */
+@media(min-width:961px){
+  body.teams-page .teams-hero{
+    min-height:calc(100svh - 76px) !important;
+    padding:64px 0 62px !important;
+    display:flex !important;
+    align-items:center !important;
+    background-size:cover !important;
+    background-position:center center !important;
+  }
+
+  body.teams-page .teams-hero .hero-inner{
+    width:min(1120px,calc(100% - 36px)) !important;
+    max-width:1120px !important;
+    margin-inline:auto !important;
+    grid-template-columns:1fr !important;
+    align-items:center !important;
+    align-content:center !important;
+    min-height:auto !important;
+    gap:0 !important;
+  }
+
+  body.teams-page .teams-hero .hero-inner > div:first-child{
+    max-width:720px !important;
+    transform:none !important;
+    align-self:center !important;
+  }
+
+  body.teams-page .teams-hero h1{
+    font-size:clamp(40px,4.4vw,58px) !important;
+    line-height:1.02 !important;
+    letter-spacing:-.045em !important;
+    max-width:720px !important;
+  }
+
+  body.teams-page .teams-hero .hero-lead{
+    max-width:650px !important;
+    font-size:16px !important;
+    line-height:1.72 !important;
+  }
+
+  body.teams-page .teams-hero .hero-actions{
+    margin-top:26px !important;
+  }
+}
+
+@media(min-width:961px) and (max-height:760px){
+  body.teams-page .teams-hero{
+    padding:46px 0 44px !important;
+  }
+  body.teams-page .teams-hero h1{
+    font-size:clamp(36px,4vw,52px) !important;
+  }
+  body.teams-page .teams-hero .hero-lead{
+    font-size:15px !important;
+    line-height:1.65 !important;
+  }
+}
 </style>
 </head>
 <body class="teams-page">
